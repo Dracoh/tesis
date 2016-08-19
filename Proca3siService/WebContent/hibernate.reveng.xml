@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+	<table-filter match-name=".*"></table-filter>
+	<table-filter match-name="accion"></table-filter>
+	<table-filter match-name="aplicacion"></table-filter>
+	<table-filter match-name="aplicacion_recurso"></table-filter>
+	<table-filter match-name="grupo"></table-filter>
+	<table-filter match-name="grupo_rol"></table-filter>
+	<table-filter match-name="recurso"></table-filter>
+	<table-filter match-name="recurso_rol"></table-filter>
+	<table-filter match-name="rol"></table-filter>
+	<table-filter match-name="rol_accion"></table-filter>
+	<table-filter match-name="user_membership"></table-filter>
+	<table-filter match-name="usuario"></table-filter>
+	<table-filter match-name="usuario_grupo"></table-filter>
+	<table-filter match-name="usuario_rol"></table-filter>
+</hibernate-reverse-engineering>

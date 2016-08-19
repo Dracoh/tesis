@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Proca3siServicePU" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:jboss/datasources/Proca3siDS</jta-data-source>
+		
+		<class>co.edu.proca3si.ejb.persistence.entities.Accion</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.Aplicacion</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.AplicacionRecurso</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.Grupo</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.GrupoRol</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.Recurso</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.RecursoRol</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.Rol</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.RolAccion</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.UserMembership</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.Usuario</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.UsuarioGrupo</class>
+        <class>co.edu.proca3si.ejb.persistence.entities.UsuarioRol</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+		
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<property name="hibernate.show_sql" value="false" />
+			<property name="hibernate.default_schema" value="public" />
+			<property name="hibernate.current_session_context_class" value="thread" />
+		</properties>
+	</persistence-unit>
+
+</persistence>
