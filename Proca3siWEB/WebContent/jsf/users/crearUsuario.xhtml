@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+	<h:form id="formPersonaTer" style="margin:5px 20px 20px 20px;" styleClass="margin: 0 auto;">
+		<p:growl id="growl" showDetail="true" sticky="true" globalOnly="true"
+			showSummary="false" autoUpdate="true" />
+
+		<!-- TITULO -->
+		<h:panelGrid styleClass="gridContTitulo" columnClasses="titulo" style="margin: 0 auto;">
+			<h:outputText value="Crear Usuario" style="font-weight:bold"/>
+		</h:panelGrid>
+		<br></br>
+		<br></br>
+		<br></br>
+
+		<!-- PANEL CREAR USUARIO -->
+		<p:panelGrid columns="4" style="margin: 0 auto;">
+
+			<p:outputLabel for="Usuario"
+				value="Usuario: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="Usuario" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel for="Nombre"
+				value="Nombre: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="Nombre" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel for="Apellido"
+				value="Apellido: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="Apellido" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel for="Email"
+				value="Correo Electronico: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="Email" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel for="txtEmailCof"
+				value="Confirmacion Correo Electronico: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="txtEmailCof" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel value="Numero Celular: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel value="Direccion: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel for="passUsu" value="Contraseña: "
+				styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:password id="passUsu" value="" match="passUsuConf"
+					styleClass="cajaTexto" feedback="true" required="true"
+					maxlength="12">
+					<f:validateLength minimum="6"></f:validateLength>
+				</p:password>
+				<p:message for="passUsu"></p:message>
+			</h:panelGroup>
+
+			<p:outputLabel for="passUsuConf" value="Confirmar Contraseña: "
+				styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:password id="passUsuConf" value="" match="passUsuConf"
+					styleClass="cajaTexto" feedback="true" required="true"
+					maxlength="12">
+					<f:validateLength minimum="6"></f:validateLength>
+				</p:password>
+				<p:message for="passUsuConf"></p:message>
+			</h:panelGroup>
+
+			<p:outputLabel value="Pais: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel value="Ciudad: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel value="Codigo Postal: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+		</p:panelGrid>
+		
+	<br></br>
+	<br></br>
+
+		<!-- BOTONES -->
+		<h:panelGrid columns="2" styleClass="gridFormularios" cellspacing="7" style="margin: 0 auto;">
+			<p:commandButton value="Crear" action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}" styleClass="btn_form" /> 
+			<p:commandButton value="Cancelar" process="@this" action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_cancel" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

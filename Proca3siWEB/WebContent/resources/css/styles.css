@@ -1,0 +1,33 @@
+@CHARSET "ISO-8859-1";
+
+@IMPORT url("../resources/css/estilosLogin.css");
+
+@IMPORT url("../resources/css/styleIndex.css");
+
+@IMPORT url("../resources/css/styleMenu.css");
+
+@IMPORT url("../resources/css/styleRegistro.css");
+
+@IMPORT url("../resources/css/estilos.css");
+
+@IMPORT url("../resources/css/estilosTemplate.css");
+
+@IMPORT url("../resources/css/estilosMenu.css");
+
+@IMPORT url("../resources/css/estilosForm.css");
+
+@IMPORT url("../resources/css/componentes.css");
+
+@IMPORT url("../resources/css/estilosTitulos.css");
+
+@IMPORT url("../resources/css/estilosBotones.css");
+
+@IMPORT url("../resources/css/estilosBotonesLink.css");
+
+@IMPORT url("../resources/css/estilosGeneral.css");
+
+@IMPORT url("../resources/css/estilosPanelGrids.css");
+
+@IMPORT url("../resources/css/estilosPrimeFaces.css");
+
+@IMPORT url("../resources/css/estilosTabView.css");

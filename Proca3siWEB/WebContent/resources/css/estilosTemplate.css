@@ -1,0 +1,485 @@
+@CHARSET "ISO-8859-1";
+
+.INTRFZ_Espc_Total {
+	width: 98.5%;
+	background-color: #ECECEC;
+	margin-right: 0%;
+	margin-left: 0%;
+	font-family: Arial !important;
+}
+
+.INTRFZ_Espc_Banner {
+	padding: 0px;
+	float: left;
+	width: 100%;
+	height: 75px;
+	background-color: #ECECEC;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Banner.png);
+	background-repeat: repeat-x;
+	margin: 0;
+}
+
+.INTRFZ_FND_Espc_Banner {
+	float: left;
+	width: 100%;
+	height: 75px;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_Banner_Fondo.png);
+	background-repeat: no-repeat;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #B7C7CC;
+	background-size: 50%;
+}
+
+.INTRFZ_Bnnr_Logo {
+	float: left;
+	height: 75px;
+	width: 35%;
+}
+
+.INTRFZ_Espc_Reloj {
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Reloj.png);
+	background-repeat: repeat-x;
+	float: right;
+	height: 30px;
+	width: 300px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+}
+
+.INTRFZ_Espc_Menu_General {
+	float: left;
+	height: 75px;
+	width: 65%;
+}
+
+.INTRFZ_Txt_Menu_General {
+	float: left;
+	width: 35%;
+	font-size: 10px;
+	font-weight: bolder;
+	color: #036;
+	line-height: 11px;
+	padding: 8px;
+	text-align: left;
+}
+
+.INTRFZ_Espc_Icono_Menu_General {
+	float: left;
+	width: 6%;
+	font-size: 9px;
+	line-height: 12px;
+	font-weight: normal;
+	color: #003;
+	padding: 6px;
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #ECECEC;
+}
+
+.INTRFZ_Espc_Txt_Icono_Menu_General {
+	float: left;
+	width: 15%;
+	font-size: 10px;
+	line-height: 10px;
+	font-weight: normal;
+	color: #003;
+	padding-top: 12px;
+	padding-right: 6px;
+	padding-bottom: 6px;
+}
+
+.INTRFZ_Espc_Nombre_Aplicacion {
+	float: left;
+	height: 40px;
+	width: 100%;
+	padding-right: 1px;
+	background-image:
+		url(../img/INTRFZ_Imagenes/INTRFZ_Nombre_Aplicacion.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 40%;
+}
+
+.INTRFZ_Espc_Btns_Menu_General {
+	float: left;
+	width: 100%;
+	padding-right: 1px;
+}
+
+.INTRFZ_Espc_Acordeon {
+	float: left;
+	height: 514px;
+	width: 270px;
+	background-color: #ECECEC;
+	padding-top: 5px;
+	padding-right: 7px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.INTRFZ_Menu_Acordeon {
+	padding: 1px;
+	float: left;
+	height: 502px;
+	width: 100%;
+	background-color: #ECECEC;
+	-moz-box-shadow: 0px 0px 3px #333;
+	-webkit-box-shadow: 0px 0px 3px #333;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+.INTRFZ_BTN_M_Espc_Icono {
+	background-position: center;
+	height: 100%;
+	width: 15%;
+	float: left;
+}
+
+.INTRFZ_BTN_M_Azul_1_Arriba {
+	background-color: #4BAEDD;
+	padding: 2%;
+	float: left;
+	width: 96%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+}
+
+.INTRFZ_BTN_M_Azul_1 {
+	background-color: #42AEDE;
+	padding: 2%;
+	float: left;
+	width: 96%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+}
+
+.BTN_Texto_1 {
+	font-size: 12px;
+	color: #FFF;
+	height: 100%;
+	width: 75%;
+	float: left;
+	padding-top: 2%;
+	margin-left: 2%;
+	text-shadow: 1px 1px 3px #003;
+	line-height: 12px;
+}
+
+.INTRFZ_BTN_M_Azul_2_Arriba {
+	background-color: #2C86CB;
+	padding: 2%;
+	float: left;
+	width: 96%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+}
+
+.INTRFZ_BTN_M_Azul_2 {
+	background-color: #4BAEDD;
+	padding: 2%;
+	float: left;
+	width: 96%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+}
+
+.BTN_Texto_2 {
+	font-size: 12px;
+	color: #FFF;
+	height: 100%;
+	width: 68%;
+	float: left;
+	padding-top: 2%;
+	margin-left: 2%;
+	text-shadow: 1px 1px 2px #000;
+	line-height: 12px;
+}
+
+.INTRFZ_BTN_M_Gris {
+	background-color: #85A6BA;
+	padding: 2%;
+	float: left;
+	width: 86%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 10%;
+}
+
+.INTRFZ_BTN_M_Gris_Over {
+	background-color: #124A91;
+	padding: 2%;
+	float: left;
+	width: 86%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 10%;
+}
+
+.BTN_Espc_Icono_Accion {
+	float: left;
+	height: 95%;
+	width: 10%;
+	margin-top: 1%;
+}
+
+.INTRFZ_Espc_Submenu {
+	padding: 1px;
+	float: left;
+	width: 15%;
+	margin-top: 140px;
+	margin-left: -7px;
+}
+
+.INTRFZ_BTN_Submenu {
+	background-color: #1B4A90;
+	padding: 2%;
+	float: left;
+	width: 95%;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png);
+	background-repeat: no-repeat;
+	margin-top: 1px;
+}
+
+.INTRFZ_Copyright_Pie {
+	font-size: 10px;
+	color: #FFF;
+	background-color: #1B4A90;
+	height: 15px;
+	width: 98.2%;
+	float: right;
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	padding: 4px;
+	margin-left: auto;
+	text-align: right;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #900;
+	padding-right: 18px;
+	margin-bottom: 0 !important;
+	margin-right: 1px !important;
+	font-family: Arial !important;
+	margin-top: 0px !important;
+}
+
+.I_Espc_Menu_General {
+	width: 90%;
+	float: right;
+	height: 30px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Reloj.png);
+	background-repeat: repeat-x;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #39F;
+}
+
+.I_Borde_Menu_General {
+	float: right;
+	height: 31px;
+	width: 60px;
+	background-image:
+		url(../img/INTRFZ_Imagenes/INTRFZ_Borde_Menu_General.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.I_Bnnr_Hora {
+	float: right;
+	font-size: 11px;
+	font-weight: bold;
+	color: #39C;
+	text-align: center;
+	font-family: Arial !important;
+	height: 30px;
+	margin-right: 5px;
+	line-height: 28px;
+	text-shadow: 0px 1px 2px #FFF;
+}
+
+.I_Bnnr_Usuario {
+	font-family: Arial !important;
+	font-size: 11px;
+	font-weight: bold;
+	color: #39C;
+	float: right;
+	height: 30px;
+	line-height: 28px;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-shadow: 0px 1px 2px #FFF;
+}
+
+.I_Bnnr_Iconos {
+	text-align: center;
+	float: right;
+	height: 20px;
+	width: 20px;
+	padding-top: 3px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: 0px;
+}
+
+.I_Icono_Image {
+	width: 20px;
+	width: 20px;
+	border: 20px;
+}
+
+.I_Bnnr_Puerto {
+	font-size: 11px;
+	color: #39C;
+	float: right;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+	font-family: Arial !important;
+	line-height: 28px;
+	text-shadow: 0px 1px 2px #FFF;
+	font-weight: bold;
+}
+
+.I_Bnnr_Punto {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 11px;
+	color: #036;
+	text-align: center;
+	width: 4%;
+	float: left;
+	padding-top: 10px;
+}
+
+.I_Bnnr_Fecha {
+	float: right;
+	width: 90px;
+	font-size: 11px;
+	color: #39C;
+	text-align: center;
+	font-family: Arial !important;
+	height: 30px;
+	line-height: 28px;
+	text-shadow: 0px 1px 2px #FFF;
+	font-weight: bold;
+}
+
+.divPrincipal {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+	float: left !important;
+}
+
+.espacio_menu {
+	vertical-align: top;
+	width: 20%;
+}
+
+.espacio_contenido {
+	vertical-align: top;
+	width: 80%;
+	background-color: white;
+}
+
+.tablePrincipal {
+	width: 100%;
+}
+
+.div_contenedor_notificacion {
+	height: 100%;
+	position: fixed;
+	top: 30%;
+	left: 0;
+}
+
+.div_Notificacion {
+	width: 29px;
+	height: 300px;
+	background-color: white;
+	margin-left: auto;
+	position: relative;
+	z-index: 100;
+	border: 1px solid #AAA;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-box-shadow: 0px 0px 5px #333;
+}
+
+.btn_hidden_notify {
+	width: 24px !important;
+	height: 269px !important;
+	border-width: 0px !important;
+	margin-left: -1px !important;
+	background-image: url(../img/general/flecha_verde_izquierda.png);
+	background-color: white !important;
+	-webkit-border-radius: 0px !important;
+	-webkit-transition: All 0.1s ease !important;
+	-webkit-box-shadow: 0px 0px 5px white !important;
+}
+
+.btn_hidden_notify:hover {
+	
+}
+
+.input_Cont_Notify {
+	width: 20px !important;
+	text-align: center !important;
+	font-size: 16px !important;
+	font-weight: bolder !important;
+	color: #FF1010 !important;
+}
+
+.cssDivContenidoNotify {
+	height: 300px !important;
+	overflow: scroll;
+}
+
+.cssColumnMenuNotify {
+	width: 100px !important;
+	text-align: center !important;
+}
+
+.cssDataGridNotify {
+	height: 465px !important;
+	width: 352px !important;
+}
+
+.cssPnlGridMenuNotify {
+	width: 161px !important;
+	height: 202px !important;
+}

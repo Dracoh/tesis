@@ -1,0 +1,68 @@
+@CHARSET "ISO-8859-1";
+
+.fondoBody {
+	background-image: url(../media/bg01.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.registro {
+	width: 500px;
+	margin-left: 400px;
+}
+
+.divBody {
+	position: absolute; /*nos posicionamos en el centro del navegador*/
+	top: 3%;
+	left: 30%; /*determinamos una anchura*/
+	width: 1100px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left: -200px; /*determinamos una altura*/
+	height: 890px;
+}
+
+.panelRegistry {
+	background: #CDE1CE;
+}
+
+.enlaces {
+	background: #BFBFBF;
+}
+
+.dibFooter {
+	margin-top: 1100px;
+}
+
+.dibFooterRA {
+	margin-top: 800px;
+}
+
+.breadCrumb {
+	background: #30A41B;
+}
+
+.titlePerfil {
+	background: #30A41B;
+}
+
+.panelPerfil {
+	background: #CDE1CE;
+}
+
+.panelPerfilAutomotor {
+	
+}
+
+.divcent {
+	position: absolute; /*nos posicionamos en el centro del navegador*/
+	top: 30%;
+	left: 50%; /*determinamos una anchura*/
+	width: 1000px;
+	/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+	margin-left: -300px; /*determinamos una altura*/
+	height: 700px;
+	/*indicamos que el margen superior, es la mitad de la altura*/
+	margin-top: -250px;
+	border: 1px solid #808080;
+	padding: 5px;
+}

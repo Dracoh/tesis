@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head> 
+<h:body>
+	<h:form id="formPersTercero" style="margin:5px 20px 20px 20px;"
+		styleClass="margin: 0 auto;">
+		<p:growl id="growl" showDetail="true" sticky="true" globalOnly="true"
+			showSummary="false" />
+
+		<!-- TITULO -->
+		<h:panelGrid styleClass="gridContTitulo" columnClasses="titulo"
+			style="margin: 0 auto;">
+			<h:outputText value="Cambio Contraseña Usuario" style="font-weight:bold" />
+		</h:panelGrid>
+		<br></br>
+
+		<p:panelGrid id="consUsuario" columns="1" styleClass="margin: 0 auto;"
+			columnClasses="gridColumnas1, gridColumnas2, gridColumnas3, gridColumnas4" style="margin: 0 auto;">
+
+			<p:outputLabel value="Contraseña Actual: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel for="ContraNue" value="Contraseña Nueva: "
+				styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:password id="ContraNue" value="" match="passUsuConf"
+					styleClass="cajaTexto" feedback="true" required="true"
+					maxlength="12">
+					<f:validateLength minimum="6"></f:validateLength>
+				</p:password>
+			</h:panelGroup>
+
+			<p:outputLabel for="ConfCont" value="Confirmacion Contraseña: "
+				styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:password id="ConfCont" value="" match="passUsuConf"
+					styleClass="cajaTexto" feedback="true" required="true"
+					maxlength="12">
+					<f:validateLength minimum="6"></f:validateLength>
+				</p:password>
+			</h:panelGroup>
+
+		</p:panelGrid>
+		<br> </br>
+		
+		<!-- BOTONES -->
+		<h:panelGrid columns="2" styleClass="gridFormularios" cellspacing="7" style="margin: 0 auto;">
+			<p:commandButton value="Cambiar Contraseña"
+				action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_consultar">
+			</p:commandButton>
+			<p:commandButton value="Cancelar"
+				action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_add" process="@this">
+			</p:commandButton>
+		</h:panelGrid>
+		<br> </br>
+
+	</h:form>		
+</h:body>
+</html>

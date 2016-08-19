@@ -19,11 +19,24 @@ import javax.persistence.Table;
 @Table(name = "aplicacion")
 public class Aplicacion implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "app_codigo", unique = true, nullable = false)
 	private long appCodigo;
+	
+	@Column(name = "app_nombre", nullable = false, length = 280)
 	private String appNombre;
+	
+	@Column(name = "app_token", nullable = false, length = 360)
 	private String appToken;
+	
+	@Column(name = "app_email_confirmed", nullable = false)
 	private boolean appEmailConfirmed;
+	
+	@Column(name = "app_email", nullable = false)
 	private String appEmail;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "aplicacion")
 	private Set<AplicacionRecurso> aplicacionRecursos = new HashSet<AplicacionRecurso>(0);
 
 	public Aplicacion() {
@@ -46,9 +59,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.aplicacionRecursos = aplicacionRecursos;
 	}
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "app_codigo", unique = true, nullable = false)
 	public long getAppCodigo() {
 		return this.appCodigo;
 	}
@@ -57,7 +67,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.appCodigo = appCodigo;
 	}
 
-	@Column(name = "app_nombre", nullable = false, length = 280)
 	public String getAppNombre() {
 		return this.appNombre;
 	}
@@ -66,7 +75,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.appNombre = appNombre;
 	}
 
-	@Column(name = "app_token", nullable = false, length = 360)
 	public String getAppToken() {
 		return this.appToken;
 	}
@@ -75,7 +83,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.appToken = appToken;
 	}
 
-	@Column(name = "app_email_confirmed", nullable = false)
 	public boolean isAppEmailConfirmed() {
 		return this.appEmailConfirmed;
 	}
@@ -84,7 +91,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.appEmailConfirmed = appEmailConfirmed;
 	}
 
-	@Column(name = "app_email", nullable = false)
 	public String getAppEmail() {
 		return this.appEmail;
 	}
@@ -93,7 +99,6 @@ public class Aplicacion implements java.io.Serializable {
 		this.appEmail = appEmail;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "aplicacion")
 	public Set<AplicacionRecurso> getAplicacionRecursos() {
 		return this.aplicacionRecursos;
 	}

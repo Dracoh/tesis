@@ -1,0 +1,90 @@
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------ESTILOS PARA LOS BOTONES NORMALES
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.btn_form_suspender {
+	background-image: url(../img/general/off.png) !important;
+}
+
+.btn_form_reanudar {
+	background-image: url(../img/general/on.png) !important;
+}
+
+/*ESTILO PARA EL BOTON DE CONSULTAR*/
+.btn_form_consultar {
+	background-image: url(../img/general/consultar_normal.png) !important;
+}
+
+.btn_form_consultar:hover {
+	background-image: url(../img/general/consultar_hover.png) !important;
+}
+
+/*ESTILO PARA EL BOTON DE GUARDAR*/
+.btn_form_guardar {
+	background-image: url(../img/general/save_n.png) !important;
+}
+
+.btn_form_guardar:hover {
+	background-image: url(../img/general/save_h.png) !important;
+}
+
+/*ESTILO PARA UN BOTON EN AGREGAR*/
+.btn_form_add {
+	background-image: url(../img/general/add_n.png) !important;
+}
+
+.btn_form_add:hover {
+	background-image: url(../img/general/add_h.png) !important;
+}
+
+/*ESTILO PARA UN BOTON DE OK*/
+.btn_form_ok {
+	background-image: url(../img/general/ok_n.png) !important;
+}
+
+.btn_form_ok:hover {
+	background-image: url(../img/general/ok_h.png) !important;
+}
+
+/*ESTILO PARA UN BOTON DE CANCELAR*/
+.btn_form_cancel {
+	background-image: url(../img/general/cancel_n.png) !important;
+}
+
+.btn_form_cancel:hover {
+	background-image: url(../img/general/cancel_h.png) !important;
+}
+/*ESTILOS PARA UN BOTON CONSULTA DE PROVEEDOR*/
+.btn_form_consultar_proveedor {
+	background-image: url(../img/proveedores/buscar_p2_n.png) !important;
+}
+
+.btn_form_consultar_proveedor:hover {
+	background-image: url(../img/proveedores/buscar_p2_h.png) !important;
+}
+/*ESTILOS PARA UN BOTON ACTUALIZAR*/
+.btn_form_actualizar {
+	background-image: url(../img/general/actualizar.png) !important;
+}
+
+.btn_form_actualizar:hover {
+	background-image: url(../img/general/actualizar.png) !important;
+}
+/*ESTILOS PARA UN BOTON RETROCEDER*/
+.btn_form_retroceder {
+	background-image: url(../img/general/retroceder.png) !important;
+}
+
+.btn_form_retroceder:hover {
+	background-image: url(../img/general/retroceder.png) !important;
+}
+
+.btn_form_retro_trackin {
+	background-image: url(../img/query/return.png) !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}

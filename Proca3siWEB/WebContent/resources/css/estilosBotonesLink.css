@@ -1,0 +1,142 @@
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------ESTILOS PARA LOS BOTONES TIPO LINK CON IMAGEN------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/*ESTILO PARA LOS ELIMINAR*/
+.btn_form_eliminar {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/general/delete_n.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_form_eliminar:hover {
+	background-image: url(../img/general/delete_h.png) !important;
+}
+
+/*ESTILO PARA CONSULTAS */
+.btn_columns_select {
+	width: 20px !important;
+	height: 20px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	float: right;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+}
+
+/*ESTILO PARA LOS SIGUIENTE*/
+.btn_form_siguiente {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/general/arrow_n.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_form_siguiente:hover {
+	background-image: url(../img/general/arrow_h.png) !important;
+}
+
+/*ESTILO PARA LOS ANULAR*/
+.btn_form_anular {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/general/anular_n.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_form_anular:hover {
+	background-image: url(../img/general/anular_h.png) !important;
+}
+
+/*ESTILO CERRAR*/
+.btn_form_cerrar {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/general/cancel_n.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_form_cerrar:hover {
+	background-image: url(../img/general/cancel_h.png) !important;
+}
+
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------BOTONES TERCEROS------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.btn_actualizar_tercero {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/USUARIOS_Imagenes/edit_user.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_actualizar_contactos {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/contactos/verContactos.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}
+
+.btn_actualizar_sedes {
+	width: 26px !important;
+	color: rgba(255, 255, 255, 0) !important;
+	background-color: rgba(255, 255, 255, 0) !important;
+	border-color: rgba(255, 255, 255, 0) !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/USUARIOS_Imagenes/sedes.png) !important;
+	cursor: pointer !important;
+	-moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+	-webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0) !important;
+}

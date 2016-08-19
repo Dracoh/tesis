@@ -1,0 +1,35 @@
+/*ESTILOS PARA UN TABVIEW*/
+
+/*ESTILOS PARA EL TABVIEW DEL TRACKING*/
+/*ESTILO PARA LOS EVENTOS*/
+.tab_eventos {
+	width: 100px !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/query/eventos.png) !important;
+	cursor: pointer !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+/*ESTILO PARA LOS DOCUMENTOS*/
+.tab_documentos {
+	width: 150px !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/query/documento.png) !important;
+	cursor: pointer !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+/*ESTILO PARA LA LINEA DE TIEMPO*/
+.tab_linea_de_tiempo {
+	width: 180px !important;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	background-image: url(../img/query/history.png) !important;
+	cursor: pointer !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}

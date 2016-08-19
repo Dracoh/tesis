@@ -1,0 +1,64 @@
+/*
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ESTILO PARA LA LETRA DE LOS TITULOS PEQUEÑOS
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/* LETRA */
+.titulo {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bolder;
+	color: #144793;
+	text-align: left;
+	border: none !important;
+	font-family: Arial !important;
+}
+
+/*CONTENEDOR*/
+.gridContTitulo {
+	width: 100%;
+	border-bottom: 2px solid !important;
+	border-bottom-color: #154B95 !important;
+	font-family: Arial !important;
+}
+
+/*LETRA*/
+.tituloModal {
+	font-size: 13px;
+	line-height: 25px;
+	font-weight: bolder;
+	color: #144793;
+	text-align: left;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #154B95;
+}
+/*CONTENEDOR*/
+.gridContTituloModal {
+	width: 98%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+/*LETRA*/
+.tituloSinBordeInferior {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bolder;
+	color: #144793;
+	text-align: left;
+	border-bottom-width: 2px;
+	border-bottom-style: none;
+	border-bottom-color: #154B95;
+	padding-top: 20px;
+}
+
+/*CONTENEDOR*/
+.gridConttituloSinBordeInferior {
+	width: 98%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}

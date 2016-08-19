@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:form>
+
+	<h:panelGrid style="padding-right: 2%;">
+		<h:messages globalOnly="true" showDetail="true" showSummary="false" />
+		<p:growl id="growl" showDetail="true" sticky="true" />
+	</h:panelGrid>
+
+	<div class="INTRFZ_Espc_Login">
+		<h:panelGrid columns="1">
+			<h:outputLabel value="Autenticacion " />
+			<h:outputLabel value="de usuario" />
+
+			<h:panelGrid columns="1" style="margin:auto;">
+				<a title="Control Taxi"> <img align="left" width="110"
+					height="100" src="resources/img/loginUser.png" /></a>
+				<br />
+			</h:panelGrid>
+
+			<h:panelGrid id="panGAut" columns="2" cellpadding="1">
+				<p:outputLabel id="lbUsuario" value="Usuario/Correo Electrónico"
+					for="txtUsuario" />
+				<p:inputText id="txtUsuario" value="#{autenticacionSistemaMB.login}"
+					required="true"
+					requiredMessage="Es obligatorio que se diligencie este campo." />
+				<p:outputLabel id="lbContrasenia" value="Contraseña"
+					for="txtContrasenia" />
+				<p:password id="txtContrasenia" styleClass="outText"
+					value="#{autenticacionSistemaMB.password}" required="true"
+					requiredMessage="Es obligatorio que se diligencie la contraseña." />
+
+			</h:panelGrid>
+			<div class="I_Links">
+				<h:outputLink value="#" styleClass="INTRFZ_Txt_Links">
+					<h:outputText value="¿Olvidaste la contraseña?" />
+				</h:outputLink>
+			</div>
+
+			<h:panelGrid id="panButtons" columns="2" cellpadding="1">
+				<p:commandButton value="Entrar" class="btn btn-default"
+					action="#{autenticacionSistemaMB.autenticar}" process="@form"
+					update="panGAut, growl" />
+				<p:commandButton value="Cancelar"
+					action="#{autenticacionSistemaMB.autenticar}" process="@form"
+					update="panGAut, growl" />
+			</h:panelGrid>
+		</h:panelGrid>
+	</div>
+</h:form>
+</html>

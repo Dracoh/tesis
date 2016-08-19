@@ -19,19 +19,48 @@ import javax.persistence.Table;
 @Table(name = "user_membership")
 public class UserMembership implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "ump_codigo", unique = true, nullable = false)
 	private long umpCodigo;
+	
+	@Column(name = "ump_passwordhash")
 	private String umpPasswordhash;
+	
+	@Column(name = "ump_securitysalt", nullable = false)
 	private String umpSecuritysalt;
+	
+	@Column(name = "ump_phone_number", nullable = false, length = 280)
 	private String umpPhoneNumber;
+	
+	@Column(name = "ump_two_factor_enabled")
 	private Boolean umpTwoFactorEnabled;
+	
+	@Column(name = "ump_email")
 	private String umpEmail;
+	
+	@Column(name = "ump_email_confirmed", nullable = false)
 	private boolean umpEmailConfirmed;
+	
+	@Column(name = "ump_lockout_enabled", nullable = false)
 	private boolean umpLockoutEnabled;
+	
+	@Column(name = "ump_last_login_ip", nullable = false, length = 280)
 	private String umpLastLoginIp;
+	
+	@Column(name = "ump_failed_password_attempt_count", nullable = false)
 	private long umpFailedPasswordAttemptCount;
+	
+	@Column(name = "ump_failed_password_attempt_windowstart", nullable = false)
 	private long umpFailedPasswordAttemptWindowstart;
+	
+	@Column(name = "ump_failed_password_answer_attempt_count", nullable = false)
 	private long umpFailedPasswordAnswerAttemptCount;
+	
+	@Column(name = "ump_failed_password_answer_attempt_window_start", nullable = false)
 	private long umpFailedPasswordAnswerAttemptWindowStart;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "userMembership")
 	private Set<Usuario> usuarios = new HashSet<Usuario>(0);
 
 	public UserMembership() {
@@ -71,9 +100,6 @@ public class UserMembership implements java.io.Serializable {
 		this.usuarios = usuarios;
 	}
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "ump_codigo", unique = true, nullable = false)
 	public long getUmpCodigo() {
 		return this.umpCodigo;
 	}
@@ -82,7 +108,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpCodigo = umpCodigo;
 	}
 
-	@Column(name = "ump_passwordhash")
 	public String getUmpPasswordhash() {
 		return this.umpPasswordhash;
 	}
@@ -91,7 +116,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpPasswordhash = umpPasswordhash;
 	}
 
-	@Column(name = "ump_securitysalt", nullable = false)
 	public String getUmpSecuritysalt() {
 		return this.umpSecuritysalt;
 	}
@@ -100,7 +124,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpSecuritysalt = umpSecuritysalt;
 	}
 
-	@Column(name = "ump_phone_number", nullable = false, length = 280)
 	public String getUmpPhoneNumber() {
 		return this.umpPhoneNumber;
 	}
@@ -109,7 +132,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpPhoneNumber = umpPhoneNumber;
 	}
 
-	@Column(name = "ump_two_factor_enabled")
 	public Boolean getUmpTwoFactorEnabled() {
 		return this.umpTwoFactorEnabled;
 	}
@@ -118,7 +140,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpTwoFactorEnabled = umpTwoFactorEnabled;
 	}
 
-	@Column(name = "ump_email")
 	public String getUmpEmail() {
 		return this.umpEmail;
 	}
@@ -127,7 +148,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpEmail = umpEmail;
 	}
 
-	@Column(name = "ump_email_confirmed", nullable = false)
 	public boolean isUmpEmailConfirmed() {
 		return this.umpEmailConfirmed;
 	}
@@ -136,7 +156,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpEmailConfirmed = umpEmailConfirmed;
 	}
 
-	@Column(name = "ump_lockout_enabled", nullable = false)
 	public boolean isUmpLockoutEnabled() {
 		return this.umpLockoutEnabled;
 	}
@@ -145,7 +164,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpLockoutEnabled = umpLockoutEnabled;
 	}
 
-	@Column(name = "ump_last_login_ip", nullable = false, length = 280)
 	public String getUmpLastLoginIp() {
 		return this.umpLastLoginIp;
 	}
@@ -154,7 +172,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpLastLoginIp = umpLastLoginIp;
 	}
 
-	@Column(name = "ump_failed_password_attempt_count", nullable = false)
 	public long getUmpFailedPasswordAttemptCount() {
 		return this.umpFailedPasswordAttemptCount;
 	}
@@ -163,7 +180,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpFailedPasswordAttemptCount = umpFailedPasswordAttemptCount;
 	}
 
-	@Column(name = "ump_failed_password_attempt_windowstart", nullable = false)
 	public long getUmpFailedPasswordAttemptWindowstart() {
 		return this.umpFailedPasswordAttemptWindowstart;
 	}
@@ -172,7 +188,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpFailedPasswordAttemptWindowstart = umpFailedPasswordAttemptWindowstart;
 	}
 
-	@Column(name = "ump_failed_password_answer_attempt_count", nullable = false)
 	public long getUmpFailedPasswordAnswerAttemptCount() {
 		return this.umpFailedPasswordAnswerAttemptCount;
 	}
@@ -181,7 +196,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpFailedPasswordAnswerAttemptCount = umpFailedPasswordAnswerAttemptCount;
 	}
 
-	@Column(name = "ump_failed_password_answer_attempt_window_start", nullable = false)
 	public long getUmpFailedPasswordAnswerAttemptWindowStart() {
 		return this.umpFailedPasswordAnswerAttemptWindowStart;
 	}
@@ -190,7 +204,6 @@ public class UserMembership implements java.io.Serializable {
 		this.umpFailedPasswordAnswerAttemptWindowStart = umpFailedPasswordAnswerAttemptWindowStart;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "userMembership")
 	public Set<Usuario> getUsuarios() {
 		return this.usuarios;
 	}

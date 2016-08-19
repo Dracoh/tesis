@@ -1,0 +1,77 @@
+@CHARSET "ISO-8859-1";
+
+.fondoMenu {
+	font-family: 'Tinos', serif;
+	background-image: url(../img/fondo.jpg) !important;
+	background-repeat: no-repeat !important;
+	background-position: center center;
+	background-attachment: fixed;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+	padding: 10% 0;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.menuText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #34C76C;
+}
+
+.varHeader {
+	font-family: 'Tinos', serif;
+	background-image: url(../img/varHead.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center center;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+	height: 50px;
+}
+
+.varFooter {
+	font-family: 'Tinos', serif;
+	background-image: url(../img/var.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center center;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+	height: 50px;
+}
+
+.subMenu {
+	font-size: 16;
+	font-family: Times New Roman;
+	color: #1C7801;
+	background-color: #CC6600
+}
+
+.bgtransparent {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.2;
+	filter: alpha(opacity =     
+		                                                         
+		       10);
+}
+
+caja {
+	background-image: url(../img/caja.png);
+	position: absolute;
+	overflow: auto;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 270px;
+	width: 800px;
+}

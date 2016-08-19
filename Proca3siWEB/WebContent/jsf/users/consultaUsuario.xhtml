@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head> 
+<h:body>
+	<h:form id="formConsultaUsuario" style="margin:5px 20px 20px 20px;"
+		styleClass="margin: 0 auto;">
+		<p:growl id="growl" showDetail="true" sticky="true" globalOnly="true"
+			showSummary="false" />
+
+		<!-- TITULO -->
+		<h:panelGrid styleClass="gridContTitulo" columnClasses="titulo"
+			style="margin: 0 auto;">
+			<h:outputText value="Consulta Usuario" style="font-weight:bold" />
+		</h:panelGrid>
+		<br></br>
+
+		<p:panelGrid id="consUsuario" columns="4" styleClass="margin: 0 auto;"
+			columnClasses="gridColumnas1, gridColumnas2, gridColumnas3, gridColumnas4" style="margin: 0 auto;">
+
+			<p:outputLabel value="Usuario: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel value="Nombres: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+			<p:outputLabel value="Apellidos: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+
+			<p:outputLabel value="Estado: " styleClass="etiqueta"></p:outputLabel>
+			<p:inputText value="" styleClass="cajaTexto"></p:inputText>
+
+		</p:panelGrid>
+		<br> </br>
+		
+		<!-- BOTONES -->
+		<h:panelGrid columns="2" styleClass="gridFormularios" cellspacing="7" style="margin: 0 auto;">
+			<p:commandButton value="Consultar"
+				action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_consultar" update="resultados">
+			</p:commandButton>
+			<p:commandButton value="Nuevo"
+				action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_add" process="@this">
+			</p:commandButton>
+		</h:panelGrid>
+		<br> </br>
+
+		<p:dataTable id="resultados" value="" var="usu" rows="15"
+			emptyMessage="No se encontraron usuarios"
+			rowsPerPageTemplate="10,20,30" paginator="true"
+			paginatorAlwaysVisible="false"
+			paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+			<f:facet name="header">
+				<h:outputText value="Resultado Busqueda Usuarios" />
+			</f:facet>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Usuario" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Nombre" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Apellidos" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Correo Electronico" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Pais" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Ciudad" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+			<p:column sortBy="">
+				<f:facet name="header">
+					<h:outputText value="Estado" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+
+
+	</p:dataTable>
+	</h:form>
+</h:body>
+</html>

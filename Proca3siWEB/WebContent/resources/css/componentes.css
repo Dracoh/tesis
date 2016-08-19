@@ -1,0 +1,54 @@
+/* ESTILO PARA LA CAJA DE TEXTO */
+.cajaTexto {
+	width: 190px;
+	height: 20px;
+	text-shadow: none !important;
+	text-transform: uppercase;
+}
+
+/* ESTILO PARA IMPLEMENTAR EN LABELS PERSONALES */
+.etiqueta {
+	font-size: 13px !important;
+}
+/* ESTILO PARA LOS COMBO BOX */
+.comboBox {
+	width: 197px !important;
+	height: 25px !important;
+	font-size: 11px !important;
+	font-family: Arial !important;
+}
+
+/*ESTILOS PARA EL PANEL DE MENSAJES*/
+.headerPanelMensajes {
+	background-image: none;
+	background-color: #99BED5;
+	position: relative;
+	padding: 2px;
+	cursor: move;
+	padding: 2px;
+}
+
+.bodyPanelMensajes {
+	color: #3297C4 !important;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+.textoMensajes {
+	color: #3297C4 !important;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+.vinculoMensajes {
+	color: #46CBF9;
+	text-decoration: underline;
+}
+
+.encabezadoMes {
+	background-color: #5B7EAC;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	height: 45px;
+}

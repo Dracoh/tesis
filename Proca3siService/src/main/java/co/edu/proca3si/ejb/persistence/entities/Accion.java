@@ -19,10 +19,21 @@ import javax.persistence.Table;
 @Table(name = "accion")
 public class Accion implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "acn_codigo", unique = true, nullable = false)
 	private long acnCodigo;
+	
+	@Column(name = "acn_nombre", nullable = false)
 	private String acnNombre;
+	
+	@Column(name = "acn_descripcion", nullable = false, length = 280)
 	private String acnDescripcion;
+	
+	@Column(name = "acn_estado", nullable = false)
 	private boolean acnEstado;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "accion")
 	private Set<RolAccion> rolAccions = new HashSet<RolAccion>(0);
 
 	public Accion() {
@@ -43,9 +54,6 @@ public class Accion implements java.io.Serializable {
 		this.rolAccions = rolAccions;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "acn_codigo", unique = true, nullable = false)
 	public long getAcnCodigo() {
 		return this.acnCodigo;
 	}
@@ -54,7 +62,6 @@ public class Accion implements java.io.Serializable {
 		this.acnCodigo = acnCodigo;
 	}
 
-	@Column(name = "acn_nombre", nullable = false)
 	public String getAcnNombre() {
 		return this.acnNombre;
 	}
@@ -63,7 +70,6 @@ public class Accion implements java.io.Serializable {
 		this.acnNombre = acnNombre;
 	}
 
-	@Column(name = "acn_descripcion", nullable = false, length = 280)
 	public String getAcnDescripcion() {
 		return this.acnDescripcion;
 	}
@@ -72,7 +78,6 @@ public class Accion implements java.io.Serializable {
 		this.acnDescripcion = acnDescripcion;
 	}
 
-	@Column(name = "acn_estado", nullable = false)
 	public boolean isAcnEstado() {
 		return this.acnEstado;
 	}
@@ -81,7 +86,6 @@ public class Accion implements java.io.Serializable {
 		this.acnEstado = acnEstado;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "accion")
 	public Set<RolAccion> getRolAccions() {
 		return this.rolAccions;
 	}

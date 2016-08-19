@@ -1,0 +1,492 @@
+@CHARSET "ISO-8859-1";
+
+.INTRFZ_Menu {
+	padding: 1px !important;
+	float: left !important;
+	background-color: #ECECEC !important;
+	-webkit-box-shadow: 0px 0px 3px #333 !important;
+	-webkit-border-radius: 2px !important;
+	margin-left: 1px;
+}
+
+/* Tamaño del menu*/
+.ui-menu {
+	width: 96.5% !important;
+	background-color: #ffffff;
+}
+
+/*Margin de la izquierda para que se vea el icono */
+.ui-menu .ui-menuitem-text {
+	font-family: Arial !important;
+	font-size: 1em !important;
+	font-weight: bold !important;
+}
+
+/* Fondo del menu*/
+.ui-menu .ui-menu-list .ui-menuitem {
+	border-radius: 3px !important;
+	background-color: #42AEDE !important;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png) !important;
+	color: #ffffff !important;
+	padding: 2%;
+	text-shadow: none !important;
+	background-repeat: no-repeat;
+	width: 96% !important;
+	max-width: 96% !important;
+}
+
+/* Fondo del menu al pasar el mouse */
+.ui-menu .ui-menu-list .ui-menuitem:hover {
+	border-radius: 3px !important;
+	background-color: #2C86CB !important;
+	background-image: url(../img/INTRFZ_Imagenes/INTRFZ_FND_Btns_Menu.png) !important;
+	color: #ffffff !important;
+	padding: 2%;
+	text-shadow: none !important;
+	font-weight: bold !important;
+	font-size: 10px;
+	font-family: Arial !important;
+	background-repeat: no-repeat;
+	width: 96%;
+}
+
+/*Color de la letra del menu */
+.ui-menu .ui-menu-list .ui-menuitem a {
+	color: #ffffff !important;
+	width: 85% !important;
+	background: none;
+}
+
+/*Tratar de quitar el blanco del menu */
+.ui-menu .ui-menu-list .ui-menuitem a:hover {
+	background: none !important;
+}
+
+/* Quitar un borde que aparece en el menu al pasar el mouse */
+.ui-menu .ui-menuitem-link {
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.ui-menu .ui-menuitem-link:hover {
+	background: none !important;
+}
+
+/* Estilos para los hijos de menu */
+.ui-menu .ui-menu-parent .ui-menu-child {
+	width: 70% !important;
+}
+
+.ui-menubar {
+	border: 1px solid #aed0ea !important;
+	background-color: #FE8105 !important;
+	color: #ffffff !important;
+	font-weight: bolder !important;
+}
+
+/*_/_/_/_/_/_/_/_/_/_/*/
+/*_/_/_/_/_/_/_/_/_/_/*/
+/*_/_/_/_/_/_/_/_/_/_/*/
+/*ESTILOS DE MENUS */
+/*_/_/_/_/_/_/_/_/_/_/*/
+/*_/_/_/_/_/_/_/_/_/_/*/
+/*_/_/_/_/_/_/_/_/_/_/*/
+.imagenUsuario {
+	background-image: url("../img/USUARIOS_Imagenes/usuarios.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenProgramPlanVallejo {
+	background-image: url("../img/planVallejo/planVallejo.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 35px !important;
+	z-index: 2 !important;
+}
+
+.imagenAdminArancelaria {
+	background-image: url("../img/adminsitracionArancelaria/carga.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 35px !important;
+	z-index: 2 !important;
+}
+
+.imagenQuerys {
+	background-image: url("../img/query/querys.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenQueryTracking {
+	background-image: url("../img/query/tracking.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenDpis {
+	background-image: url("../img/administracionExportacion/dpis.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenCarga {
+	background-image: url("../img/administradorCarga/carga.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenActividades {
+	background-image: url("../img/administradorCarga/activities.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenActAsignadas {
+	background-image: url("../img/administradorCarga/actividadesAsignadas.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenActReasignacion {
+	background-image: url("../img/administradorCarga/reasignacionDeActividades.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenSolicitudCriOrigen {
+	background-image: url("../img/general/criterioOrigen.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenConsultaCriOrigen {
+	background-image: url("../img/general/consultaCriOrigen.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenOrdenCompra {
+	background-image: url("../img/general/ordenCompra.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenExpTemporales {
+	background-image: url("../img/general/consulta_temporales.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenSolicitudExp {
+	background-image: url("../img/general/ICONOS-MAPA_EXP_26x26.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenUbicacionArchivo {
+	background-image: url("../img/general/folder.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenPerfil {
+	background-image: url("../img/USUARIOS_Imagenes/perfiles.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenClientes {
+	background-image: url("../img/USUARIOS_Imagenes/userAdmin.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 10px !important;
+}
+
+.imagenContrasena {
+	background-image: url("../img/general/actualizar.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenTracking {
+	background-image: url("../img/query/tracking.png") !important;
+	background-repeat: no-repeat !important;
+	width: 30px;
+}
+
+.imagenEventos {
+	background-image: url("../img/escritorioUsuario/eventos.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+}
+
+.imagenEscritorioUsuario {
+	background-image: url("../img/escritorioUsuario/escritorioUsuario.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenAccesoActividadesCerradas {
+	background-image: url("../img/escritorioUsuario/accesoActividades.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+}
+
+.imagenConsultaExpTemporales {
+	background-image: url("../img/general/consulta_temporales.png") !important;
+	background-repeat: no-repeat !important;
+	width: 30px;
+}
+
+.imagenNumberSAE {
+	background-image: url("../img/general/numbreList.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenTablasDian {
+	background-image: url("../img/general/tablasDian.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenBuscar {
+	background-image: url("../img/general/consultar_normal.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenCriteriosSAE {
+	background-image: url("../img/general/criteriosAprobacion.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenAprobarSAE {
+	background-image: url("../img/general/aprobacionSAE.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenMenuSAE {
+	background-image: url("../img/SAE/muisca.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+}
+
+.imagenGuardar {
+	background-image: url("../img/facturacionExp/guardar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenAgregar {
+	background-image: url("../img/facturacionExp/agregar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenEliminar {
+	background-image: url("../img/facturacionExp/eliminar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenEmpaquetar {
+	background-image: url("../img/facturacionExp/empaquetar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenExcel {
+	background-image: url("../img/facturacionExp/excel.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenModificar {
+	background-image: url("../img/facturacionExp/modificar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenSelect {
+	background-image: url("../img/facturacionExp/select.png") !important;
+	background-repeat: no-repeat !important;
+	background-size: 50% 50%;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenBuscarItem {
+	background-image: url("../img/facturacionExp/buscar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenOrdenCompraItem {
+	background-image: url("../img/facturacionExp/ir.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenCopiar {
+	background-image: url("../img/facturacionExp/copy.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenCLasificar {
+	background-image: url("../img/escritorioUsuario/Clasificar.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenCuadroInsumoProducto {
+	background-image: url("../img/facturacionExp/cip.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasRefrescar {
+	background-image: url("../img/arancel/refrescarClasificacion.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasPremiun {
+	background-image: url("../img/arancel/premium.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasGuardar {
+	background-image: url("../img/arancel/save.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasGuardarReplica {
+	background-image: url("../img/arancel/saveReplica.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasSubpartida {
+	background-image: url("../img/otros_imagenes/find_h_icon.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasSubpartidaActualizar {
+	background-image: url("../img/arancel/subpartidaUpdate.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasDesMinimasGlobal {
+	background-image: url("../img/arancel/descripcionesMinimas.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasVistosBuenosGlobal {
+	background-image: url("../img/arancel/vistosBuenos.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasCancelar {
+	background-image: url("../img/general/retroceder.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenReferenciasCerrarActivida {
+	background-image: url("../img/otros_imagenes/borrar024.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenCargarArchivo {
+	background-image: url("../img/general/cargarArchivo.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenTransferirSeriales {
+	background-image: url("../img/general/transferirSeriales.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenIncItemArchivo {
+	background-image: url("../img/facturacionExp/factDesdeDocumento.png") !important;
+	background-repeat: no-repeat !important;
+	width: 33px;
+	background-position-x: 50% !important;
+}
+
+.imagenEmbarque {
+	background-image: url("../img/embarque/embarque.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenInstruccionEmbarque {
+	background-image: url("../img/embarque/instruccion_embarque_menu.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenSolicitarMaster {
+	background-image: url("../img/embarque/solicitar_master_menu.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}
+
+.imagenInventarioGuiaAerea {
+	background-image: url("../img/embarque/airport.png") !important;
+	background-repeat: no-repeat !important;
+	padding-left: 30px !important;
+	z-index: 2 !important;
+}

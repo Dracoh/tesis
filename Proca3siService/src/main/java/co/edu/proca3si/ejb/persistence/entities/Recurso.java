@@ -19,12 +19,27 @@ import javax.persistence.Table;
 @Table(name = "recurso")
 public class Recurso implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "rec_codigo", unique = true, nullable = false)
 	private long recCodigo;
+	
+	@Column(name = "rec_nombre", nullable = false, length = 280)
 	private String recNombre;
+	
+	@Column(name = "rec_descripccion", nullable = false, length = 280)
 	private String recDescripccion;
+	
+	@Column(name = "rec_path", nullable = false, length = 280)
 	private String recPath;
+	
+	@Column(name = "rec_estado", nullable = false)
 	private boolean recEstado;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "recurso")
 	private Set<RecursoRol> recursoRols = new HashSet<RecursoRol>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "recurso")
 	private Set<AplicacionRecurso> aplicacionRecursos = new HashSet<AplicacionRecurso>(0);
 
 	public Recurso() {
@@ -49,9 +64,6 @@ public class Recurso implements java.io.Serializable {
 		this.aplicacionRecursos = aplicacionRecursos;
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "rec_codigo", unique = true, nullable = false)
 	public long getRecCodigo() {
 		return this.recCodigo;
 	}
@@ -60,7 +72,6 @@ public class Recurso implements java.io.Serializable {
 		this.recCodigo = recCodigo;
 	}
 
-	@Column(name = "rec_nombre", nullable = false, length = 280)
 	public String getRecNombre() {
 		return this.recNombre;
 	}
@@ -69,7 +80,6 @@ public class Recurso implements java.io.Serializable {
 		this.recNombre = recNombre;
 	}
 
-	@Column(name = "rec_descripccion", nullable = false, length = 280)
 	public String getRecDescripccion() {
 		return this.recDescripccion;
 	}
@@ -78,7 +88,6 @@ public class Recurso implements java.io.Serializable {
 		this.recDescripccion = recDescripccion;
 	}
 
-	@Column(name = "rec_path", nullable = false, length = 280)
 	public String getRecPath() {
 		return this.recPath;
 	}
@@ -87,7 +96,6 @@ public class Recurso implements java.io.Serializable {
 		this.recPath = recPath;
 	}
 
-	@Column(name = "rec_estado", nullable = false)
 	public boolean isRecEstado() {
 		return this.recEstado;
 	}
@@ -96,7 +104,6 @@ public class Recurso implements java.io.Serializable {
 		this.recEstado = recEstado;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "recurso")
 	public Set<RecursoRol> getRecursoRols() {
 		return this.recursoRols;
 	}
@@ -105,7 +112,6 @@ public class Recurso implements java.io.Serializable {
 		this.recursoRols = recursoRols;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "recurso")
 	public Set<AplicacionRecurso> getAplicacionRecursos() {
 		return this.aplicacionRecursos;
 	}

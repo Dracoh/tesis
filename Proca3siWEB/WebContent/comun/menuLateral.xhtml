@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<body>
+	<h:form>
+		<p:slideMenu style="width:180px">
+			<p:submenu label="Administracion de Taxis" icon="ui-icon-refresh"
+				styleClass="subMenu">
+				<p:menuitem value="Registrar Taxi" icon="ui-icon-close"
+					actionListener="#{entradaMB.redirigirRegistarTaxi}"
+					rendered="#{entradaMB.puedeRegistrar}" />
+				<p:menuitem value="Consultar Taxis" icon="ui-icon-close"
+					actionListener="#{entradaMB.redirigirConsultarTaxis}"
+					rendered="#{entradaMB.puedeConsultar}" />
+			</p:submenu>
+			<p:submenu label="Administrar Taxistas" icon="ui-icon-newwin"
+				styleClass="subMenu">
+				<p:menuitem value="Registrar Taxista" icon="ui-icon-close"
+					actionListener="#{entradaMB.redirigirRegistarTaxista}"
+					rendered="#{entradaMB.puedeRegistrar}" />
+			</p:submenu>
+		</p:slideMenu>
+	</h:form>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/*
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+DATATABLE PRIMEFACES------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.ui-growl-item {
+	background-color: rgba(255, 255, 255, 1);
+	color: #000000;
+	border: 1px solid #0080FF;
+	text-shadow: none;
+}
+
+.ui-growl-item-container {
+	opacity: 0.9 !important;
+}
+
+.ui-outputlabel .ui-outputlabel-rfi {
+	color: red !important;
+}
+
+.ui-datagrid-data table {
+	border: none !important;
+}
+
+.ui-datatable tbody td {
+	padding: 3px !important;
+}
+
+/*Estilos para la cabecera de las subtables incluidas en las datatables*/
+.ui-datatable-subtable-header {
+	background-color: #A9BCF5 !important;
+	text-shadow: none !important;
+	color: #000000 !important;
+}
+
+/* Tamño de la letra de la aplicacion*/
+.ui-widget,.ui-widget .ui-widget {
+	font-size: 12px !important;
+}
+
+/* Ponemos un zindex para que el menu pueda salir sobre el layout central*/
+.ui-layout-west {
+	z-index: 20 !important;
+	overflow: visible !important;;
+}
+
+/*Cambiamos la propiedad de color del header del menu*/
+.ui-layout-west .ui-layout-unit-header {
+	text-shadow: none !important;
+	color: #ffffff !important;
+	background: #a90329 !important; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E5MDMyOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ0JSIgc3RvcC1jb2xvcj0iIzhmMDIyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2ZDAwMTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+		!important;
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%)
+		!important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a90329),
+		color-stop(44%, #8f0222), color-stop(100%, #6d0019) ) !important;
+	/* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%)
+		!important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%)
+		!important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%)
+		!important; /* IE10+ */
+	background: linear-gradient(to bottom, #a90329 0%, #8f0222 44%, #6d0019 100%)
+		!important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(       
+		                     
+		                     
+		                     
+		                     
+		                     
+		                     startColorstr='#a90329', endColorstr='#6d0019',
+		GradientType=0 ) !important; /* IE6-8 */
+}
+
+/* Hacemos visible lo que sobre */
+.ui-layout-west .ui-layout-unit-content {
+	overflow: visible !important;
+}
+
+/*Margin para el panel de la parte de arriba*/
+.ui-panel {
+	margin-top: 5px !important;
+}
+
+/* Le quitamos el padding a los paneles para que el contenido se pegue mas a las lineas de los extremos */
+.ui-panel .ui-panel-content {
+	padding: 0px 0px 0px 0px !important;
+}
+
+/*Panel fondo cabecera*/
+.ui-panel .ui-panel-titlebar {
+	background-color: #5B7EAC !important;
+	font-family: Arial !important;
+	font-size: 11px !important;
+	text-shadow: none !important;
+	color: #ffffff !important;
+	text-align: center !important;
+}
+
+.ui-panel .ui-panel-title {
+	margin: 0 auto !important;
+}
+
+/*ESTILO PARA EL CONTENEDOR TABLA*/
+.ui-datatable table {
+	background-color: #FFF !important;
+	border-collapse: collapse !important;
+	border: 1px solid #C0C0C0 !important;
+	empty-cells: show !important;
+	text-align: center !important;
+	min-width: 300px;
+	font-family: Arial !important;
+	font-size: 11px !important;
+}
+
+/* Scroll horizontal del layout center*/
+.ui-layout-center .ui-layout-unit-content {
+	overflow-x: hidden !important;
+}
+
+/* Scroll horizontal del layout center*/
+.ui-layout-south .ui-layout-unit-content {
+	overflow-y: hidden !important;
+}
+
+/* peginador datatable*/
+.ui-widget-header {
+	background: none !important;
+	border: 0px solid #ffffff !important;
+}
+
+/* PAGINADOR */
+.ui-datatable .ui-paginator {
+	background-color: #5B7EAC !important;
+	border-top: 1px solid #ffffff !important;
+	color: #ffffff !important;
+	margin: 0 auto !important;
+	font-family: Arial !important;
+	font-size: 11px !important;
+	text-shadow: none !important;
+	min-width: 300px;
+}
+
+/* ESTILO PARA LA COLUMNA CABECERA DE LAS RICH:DATATABLES*/
+.ui-datatable .ui-datatable-header,.ui-datatable .ui-datatable-footer {
+	border: none !important;
+	background-color: #5B7EAC !important;
+	color: white !important;
+	font-family: Arial !important;
+	font-size: 11px !important;
+	font-weight: bold ! important;
+	padding: 4px !important;
+	text-align: center !important;
+	text-shadow: none !important;
+	margin: 0 auto !important;
+	max-width: 100% !important;
+	min-width: 300px;
+}
+
+.ui-datatable .ui-datatable-footer {
+	border-top: 1px solid #ffffff !important;
+}
+
+/*ESTILOS PARA LAS CELDAS DE LAS RICH:DATATABLES*/
+.ui-datatable th {
+	background-color: #5B7EAC !important;
+	background-image: none !important;
+	color: white !important;
+	font-family: Arial !important;
+	font-size: 12px !important;
+	padding: 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	text-shadow: none !important;
+	white-space: pre-line !important;
+	border-top: none !important;
+}
+
+/*ESTILOS PARA LAS CELDAS DE LAS RICH:DATATABLES*/
+.tablePrevisualizacion th {
+	background-color: #99CDA4 !important;
+	background-image: none !important;
+	color: white !important;
+	font-family: Arial !important;
+	font-size: 12px !important;
+	padding: 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	text-shadow: none !important;
+	white-space: pre-line !important;
+	border-top: none !important;
+}
+
+/*Color para las filas del datatable*/
+.ui-datatable,.ui-datatable-even {
+	background-color: #CFE3F8 !important;
+	color: #036 !important;
+}
+
+/*Le decimos a las columnas de la datatable que si el ancho no le alcanza que corte el contenido*/
+.ui-datatable td {
+	border: 1px solid #ffffff !important;
+	border-radius: 2px !important;
+	text-shadow: none !important;
+}
+
+/*Titulo de el PopUp (Jdialog)*/
+.ui-dialog .ui-dialog-titlebar {
+	background-color: #5B7EAC !important;
+	background-image: none !important;
+	color: white !important;
+	font-family: Arial !important;
+	font-size: 11px !important;
+	padding: 4px !important;
+	text-align: center !important;
+	font-weight: bold !important;
+	text-shadow: none !important;
+}
+
+/*Recuadro para cerrar el pop up*/
+.ui-dialog .ui-dialog-titlebar-close {
+	border: 1px solid #ffffff !important;
+	padding: 0 !important;
+}
+
+.cabeceraMenu {
+	background: #ff3019; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background:
+		url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzAxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZjA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+	/* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff3019),
+		color-stop(100%, #cf0404) ); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+	/* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+	/* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ff3019 0%, #cf0404 100%);
+	/* IE10+ */
+	background: linear-gradient(to bottom, #ff3019 0%, #cf0404 100%);
+	/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(
+		                     
+		                     
+                
+		                     startColorstr='#ff3019', endColorstr='#cf0404',
+		GradientType=0 ); /* IE6-8 */
+}
+
+.rowBlanca {
+	background-color: #ffffff !important;
+	border: 1px solid #a4a4a4 !important;
+}

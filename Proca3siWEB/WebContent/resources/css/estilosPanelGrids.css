@@ -1,0 +1,104 @@
+/*ESTILO PARA EL UN PANELGRID DE FORMULARIO*/
+.gridFormularios {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: auto;
+	margin-left: auto;
+	border-collapse: separate;
+	border-spacing: 1px;
+}
+
+.gridFormularios tr td {
+	border: none !important;
+}
+
+/*ESTILO PARA EL PANELGRID CONTENEDOR DE LA IMAGEN DE VALIDACION DE FORMULARIOS*/
+.gridContValidacion {
+	width: 98%;
+}
+
+.gridFormulariosInfo {
+	margin-left: auto;
+}
+
+/*ESTILOS PARA LOS PANELGRID DE LA LINEA CRONOLOGICA DEL TRACKING*/
+
+/*Abre Do*/
+.pnlGridAbreDo {
+	position: relative;
+	right: 26.9em;
+	z-index: 6 !important;
+}
+
+/*Reconocimiento*/
+.pnlGridReconocimiento {
+	position: relative;
+	right: 16em;
+	top: -8.5em;
+	z-index: 5 !important;
+}
+
+/*Confirmar Sae*/
+.pnlGridConfirmarSae {
+	position: relative;
+	right: 6em;
+	top: -0.3em;
+	z-index: 4 !important;
+}
+
+/*Tener Dex*/
+.pnlGridTenerDex {
+	position: relative;
+	left: 5.5em;
+	top: 8.5em;
+	z-index: 3 !important;
+}
+
+/*Salir Carga*/
+.pnlGridSalirCarga {
+	position: relative;
+	left: 16.1em;
+	top: -17.5em;
+	z-index: 2 !important;
+}
+
+/*EXPORTACION ESPECIFICA TRACKING */
+
+/*Abre Do*/
+.pnlGridAbreDoT {
+	position: relative;
+	right: -4.5em;
+	z-index: 6 !important;
+}
+
+/*Reconocimiento*/
+.pnlGridReconocimientoT {
+	position: relative;
+	right: -15em;
+	top: -7.5em;
+	z-index: 5 !important;
+}
+
+/*Confirmar Sae*/
+.pnlGridConfirmarSaeT {
+	position: relative;
+	left: 24em;
+	top: 0.4em;
+	z-index: 4 !important;
+}
+
+/*Tener Dex*/
+.pnlGridTenerDexT {
+	position: relative;
+	left: 34em;
+	top: 7.2em;
+	z-index: 3 !important;
+}
+
+/*Salir Carga*/
+.pnlGridSalirCargaT {
+	position: relative;
+	left: 44.1em;
+	top: -14.5em;
+	z-index: 2 !important;
+}

@@ -19,11 +19,24 @@ import javax.persistence.Table;
 @Table(name = "grupo")
 public class Grupo implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "gpo_codigo", unique = true, nullable = false)
 	private long gpoCodigo;
+	
+	@Column(name = "gpo_nombre", nullable = false, length = 280)
 	private String gpoNombre;
+	
+	@Column(name = "gpo_descripcion", length = 280)
 	private String gpoDescripcion;
+	
+	@Column(name = "gpo_estado", nullable = false)
 	private boolean gpoEstado;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "grupo")
 	private Set<UsuarioGrupo> usuarioGrupos = new HashSet<UsuarioGrupo>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "grupo")
 	private Set<GrupoRol> grupoRols = new HashSet<GrupoRol>(0);
 
 	public Grupo() {
@@ -44,9 +57,6 @@ public class Grupo implements java.io.Serializable {
 		this.grupoRols = grupoRols;
 	}
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "gpo_codigo", unique = true, nullable = false)
 	public long getGpoCodigo() {
 		return this.gpoCodigo;
 	}
@@ -55,7 +65,6 @@ public class Grupo implements java.io.Serializable {
 		this.gpoCodigo = gpoCodigo;
 	}
 
-	@Column(name = "gpo_nombre", nullable = false, length = 280)
 	public String getGpoNombre() {
 		return this.gpoNombre;
 	}
@@ -64,7 +73,6 @@ public class Grupo implements java.io.Serializable {
 		this.gpoNombre = gpoNombre;
 	}
 
-	@Column(name = "gpo_descripcion", length = 280)
 	public String getGpoDescripcion() {
 		return this.gpoDescripcion;
 	}
@@ -73,7 +81,6 @@ public class Grupo implements java.io.Serializable {
 		this.gpoDescripcion = gpoDescripcion;
 	}
 
-	@Column(name = "gpo_estado", nullable = false)
 	public boolean isGpoEstado() {
 		return this.gpoEstado;
 	}
@@ -82,7 +89,6 @@ public class Grupo implements java.io.Serializable {
 		this.gpoEstado = gpoEstado;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "grupo")
 	public Set<UsuarioGrupo> getUsuarioGrupos() {
 		return this.usuarioGrupos;
 	}
@@ -91,7 +97,6 @@ public class Grupo implements java.io.Serializable {
 		this.usuarioGrupos = usuarioGrupos;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "grupo")
 	public Set<GrupoRol> getGrupoRols() {
 		return this.grupoRols;
 	}

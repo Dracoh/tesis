@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head></h:head>
+<h:body>
+	<h:form id="formActualizarAccion" style="margin:5px 20px 20px 20px;" styleClass="margin: 0 auto;">
+		<p:growl id="growl" showDetail="true" sticky="true" globalOnly="true"
+			showSummary="false" autoUpdate="true" />
+
+		<!-- TITULO -->
+		<h:panelGrid styleClass="gridContTitulo" columnClasses="titulo" style="margin: 0 auto;">
+			<h:outputText value="Actualizar Acción" style="font-weight:bold"/>
+		</h:panelGrid>
+		<br></br>
+		<br></br>
+		<br></br>
+
+		<!-- PANEL ACTUALIZAR ACCION -->
+		<p:panelGrid columns="4" style="margin: 0 auto;">
+
+			<p:outputLabel for="NombredeAccion"
+				value="Nombre de la Acción: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="NombredeAccion" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+
+			<p:outputLabel for="Descripcion"
+				value="Descripción: " styleClass="etiqueta"></p:outputLabel>
+			<h:panelGroup>
+				<p:inputText id="Descripcion" value="" styleClass="cajaTexto"
+					required="true" disabled="false">
+				</p:inputText>
+			</h:panelGroup>
+			
+		</p:panelGrid>
+		
+		<br></br>
+	    <br></br>
+		
+		<!-- BOTONES -->
+		<h:panelGrid columns="2" styleClass="gridFormularios" cellspacing="7" style="margin: 0 auto;">
+			<p:commandButton value="Actualizar" action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}" styleClass="btn_form" /> 
+			<p:commandButton value="Cancelar" process="@this" action="#{registroPersonaTerceroPopUpMB.registrarPersonaTercero}"
+				styleClass="btn_form_cancel" /> 
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

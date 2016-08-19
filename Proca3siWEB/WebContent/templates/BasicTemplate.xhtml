@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title><ui:insert name="titulo">__==PROCA3SI==__</ui:insert></title>
+</h:head>
+
+<h:outputStylesheet name="styles.css" library="css" />
+
+<h:body styleClass="fondoMenu">
+	<p:layout fullPage="true">
+		<!--HEADER-->
+		<p:layoutUnit position="north" size="77">
+			<ui:include src="/jsf/templates/header.xhtml" />
+		</p:layoutUnit>
+		<!--MENU SUPERIOR-->
+		<p:layoutUnit position="west" size="210">
+			<ui:include src="/jsf/comun/menuSuperior.xhtml" />
+		</p:layoutUnit>
+		<!--MENU LATERRAL-->
+		<p:layoutUnit position="east" size="210" header="Taxi"
+			collapsible="true">
+			<ui:include src="/jsf/comun/menuLateral.xhtml" />
+		</p:layoutUnit>
+		<!-- CONTENIDO -->
+		<p:layoutUnit position="center">
+			<ui:insert name="content" />
+		</p:layoutUnit>
+		<!-- FOOTER -->
+		<p:layoutUnit position="south" size="77">
+			<ui:include src="/jsf/templates/footer.xhtml" />
+		</p:layoutUnit>
+	</p:layout>
+</h:body>
+</html>

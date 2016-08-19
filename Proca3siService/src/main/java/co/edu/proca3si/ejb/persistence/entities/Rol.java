@@ -21,14 +21,34 @@ import javax.persistence.Table;
 @Table(name = "rol")
 public class Rol implements java.io.Serializable {
 
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "rol_codigo", unique = true, nullable = false)
 	private long rolCodigo;
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "rol_rol_codigo")
 	private Rol rol;
+	
+	@Column(name = "rol_nombre", nullable = false, length = 280)
 	private String rolNombre;
+	
+	@Column(name = "rol_estado", nullable = false)
 	private boolean rolEstado;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private Set<Rol> rols = new HashSet<Rol>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private Set<RecursoRol> recursoRols = new HashSet<RecursoRol>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private Set<RolAccion> rolAccions = new HashSet<RolAccion>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private Set<GrupoRol> grupoRols = new HashSet<GrupoRol>(0);
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	private Set<UsuarioRol> usuarioRols = new HashSet<UsuarioRol>(0);
 
 	public Rol() {
@@ -53,9 +73,6 @@ public class Rol implements java.io.Serializable {
 		this.usuarioRols = usuarioRols;
 	}
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name = "rol_codigo", unique = true, nullable = false)
 	public long getRolCodigo() {
 		return this.rolCodigo;
 	}
@@ -64,8 +81,6 @@ public class Rol implements java.io.Serializable {
 		this.rolCodigo = rolCodigo;
 	}
 
-	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "rol_rol_codigo")
 	public Rol getRol() {
 		return this.rol;
 	}
@@ -74,7 +89,6 @@ public class Rol implements java.io.Serializable {
 		this.rol = rol;
 	}
 
-	@Column(name = "rol_nombre", nullable = false, length = 280)
 	public String getRolNombre() {
 		return this.rolNombre;
 	}
@@ -83,7 +97,6 @@ public class Rol implements java.io.Serializable {
 		this.rolNombre = rolNombre;
 	}
 
-	@Column(name = "rol_estado", nullable = false)
 	public boolean isRolEstado() {
 		return this.rolEstado;
 	}
@@ -92,7 +105,6 @@ public class Rol implements java.io.Serializable {
 		this.rolEstado = rolEstado;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	public Set<Rol> getRols() {
 		return this.rols;
 	}
@@ -101,7 +113,6 @@ public class Rol implements java.io.Serializable {
 		this.rols = rols;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	public Set<RecursoRol> getRecursoRols() {
 		return this.recursoRols;
 	}
@@ -110,7 +121,6 @@ public class Rol implements java.io.Serializable {
 		this.recursoRols = recursoRols;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	public Set<RolAccion> getRolAccions() {
 		return this.rolAccions;
 	}
@@ -119,7 +129,6 @@ public class Rol implements java.io.Serializable {
 		this.rolAccions = rolAccions;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	public Set<GrupoRol> getGrupoRols() {
 		return this.grupoRols;
 	}
@@ -128,7 +137,6 @@ public class Rol implements java.io.Serializable {
 		this.grupoRols = grupoRols;
 	}
 
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "rol")
 	public Set<UsuarioRol> getUsuarioRols() {
 		return this.usuarioRols;
 	}

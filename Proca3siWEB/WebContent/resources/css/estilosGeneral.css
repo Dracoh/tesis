@@ -1,0 +1,78 @@
+@font-face {
+	font-family: "Tahoma";
+	src: url(../font/tahoma.ttf) format("truetype");
+}
+
+textarea,input[type="text"],input[type="password"] {
+	font-size: 11px;
+	font-family: Arial !important;
+	height: 14px;
+	width: 92%;
+}
+
+select {
+	font-size: 11px;
+	font-family: Arial !important;
+
+}
+
+textarea[disabled],input[type="text"][disabled],input[type="password"][disabled],select[disabled]
+	{
+	color: #006AFF !important;
+	cursor: default !important;
+	opacity: 0.5 !important;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+/* REGLA PARA LOS RICHSELECT */
+input.rf-sel-inp {
+	width: 132px;
+}
+
+/*ESTILOS GLOBALES PARA LOS BOTONES*/
+button,input[type="reset"],input[type="submit"],input[type="button"] {
+	width: 130px;
+	height: 27px;
+	border-width: 1px;
+	border-color: #BED6F8;
+	font-size: 11px !important;
+	font-weight: bolder !important;
+	font-family: Arial !important;
+	color: #036 !important;
+	background-color: #97BED6;
+	background-image: none;
+	background-repeat: no-repeat !important;
+	background-position: left !important;
+	-moz-box-shadow: 0px 0px 5px #333;
+	-webkit-box-shadow: 0px 0px 5px #333;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-transition: All 0.5s ease;
+	-moz-transition: All 0.5s ease;
+	-o-transition: All 0.5s ease;
+	-ms-transition: All 0.5s ease;
+	transition: All 0.5s ease;
+}
+
+button:hover,input[type="reset"]:hover,input[type="submit"]:hover,input[type="button"]:hover
+	{
+	background-color: #E4F4FF;
+	background-image: none;
+}
+
+a {
+	font-family: Arial !important;
+	text-decoration: none;
+	color: #036;
+}
+/* ESTILO PARA LOS LINKS */
+a:hover {
+	text-decoration: underline;
+	color: #E22828;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #036
+}
