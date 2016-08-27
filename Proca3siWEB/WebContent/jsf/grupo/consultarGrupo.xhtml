@@ -41,7 +41,7 @@
 		</h:panelGrid>
 		<br> </br>
 
-		<p:dataTable id="resultados" value="" var="usu" rows="15"
+		<p:dataTable id="resultados" value="#{grupoMB.grupos}" var="grupo" rows="15"
 			emptyMessage="No se encontraron grupos"
 			rowsPerPageTemplate="10,20,30" paginator="true"
 			paginatorAlwaysVisible="false"
@@ -55,21 +55,21 @@
 				<f:facet name="header">
 					<h:outputText value="Nombre del Grupo" />
 				</f:facet>
-				<h:outputText value="" />
+				<h:outputText value="#{grupo.gpoNombre}" />
 			</p:column>
 
 			<p:column sortBy="">
 				<f:facet name="header">
 					<h:outputText value="Descripción" />
 				</f:facet>
-				<h:outputText value="" />
+				<h:outputText value="#{grupo.gpoDescripcion}" />
 			</p:column>
 
 			<p:column sortBy="">
 				<f:facet name="header">
 					<h:outputText value="Estado" />
 				</f:facet>
-				<h:outputText value="" />
+				<h:outputText value="#{grupo.gpoEstado}" />
 			</p:column>
 			
 	</p:dataTable>

@@ -1,0 +1,63 @@
+<ui:composition template="/templates/BasicTemplate.xhtml" 
+    xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:define name="content">
+
+    <p:growl id="growl" showDetail="true" life="5000"/>
+
+	<h:form id="frmdtGrupo">
+		<p:dataTable id="dtGrupo" value="#{grupoMB.grupos}" var="grupo"
+			rows="15" emptyMessage="No se encontraron grupos"
+			selection="#{grupoMB.grupo}" selectionMode="single" 
+			filteredValue="#{grupoMB.filtroGrupos}"
+			rowKey="#{grupo.gpoCodigo}"         
+			rowsPerPageTemplate="10,20,30" paginator="true"
+			paginatorPosition="top"
+			paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+			<f:facet name="header">
+				<h:outputText value="Lista de Grupos" />
+			</f:facet>
+
+            <p:ajax event="rowSelect" listener="#{grupoMB.onRowSelect}" />   
+
+			<p:column headerText="Nombre del Grupo"      
+			          filterBy="#{grupo.gpoNombre}" 
+			          filterMatchMode="contains"
+			          sortBy="#{grupo.gpoNombre}" >
+				<h:outputText value="#{grupo.gpoNombre}" />
+			</p:column>
+
+			<p:column headerText="Descripción"
+			          sortBy="#{grupo.gpoDescripcion}" 
+			          filterBy="#{grupo.gpoDescripcion}">
+				<h:outputText value="#{grupo.gpoDescripcion}" />
+			</p:column>
+
+			<p:column headerText="Estado"
+			          sortBy="#{grupo.gpoEstado}" >
+				<h:outputText value="#{grupo.gpoEstado}" />
+			</p:column>
+			
+			<f:facet name="footer">
+			    <h:panelGroup style="display:block; text-align:left">
+			    	<p:commandButton id="btnAgregar" value="Agregar"
+			    	                 icon="ui-icon-plusthick"
+			    	                 actionListener="#{grupoMB.antesAgregar()}"
+			    	                 oncomplete="PF('dlgCrearGrupo').show()"/>
+			    </h:panelGroup>
+			</f:facet>
+
+		</p:dataTable>
+	</h:form>
+	
+	<ui:include src="create.xhtml" />
+	<ui:include src="edit.xhtml" />
+	
+</ui:define>
+
+</ui:composition>

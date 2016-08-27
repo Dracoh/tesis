@@ -35,17 +35,19 @@ public class Recurso {
 	private FacadeAdministracionBe facadeAdministracionBe;
 
 	@POST
+	@Path("/crear")
 	public Long crearRecurso(RecursoDTO recursoDTO) throws ExceptionDAO {
 		return facadeAdministracionBe.crearRecurso(recursoDTO);
 	}
 
 	@GET
-	@Path("/{id: \\d+}")
+	@Path("/consultar/{id}")
 	public RecursoDTO consultarAccionXId(@PathParam("id") long id) throws ExceptionDAO {
 		return facadeAdministracionBe.consultarRecursoXId(id);
 	}
 
 	@GET
+	@Path("/consultarTodos/")
 	public List<RecursoDTO> consultarRecursosTodos() throws ExceptionDAO {
 		return facadeAdministracionBe.consultarRecursosTodos();
 	}
@@ -57,11 +59,13 @@ public class Recurso {
 	}
 
 	@PUT
+	@Path("/actualizar/")
 	public boolean actualizarRecurso(RecursoDTO recursoDTO) throws ExceptionDAO {
 		return facadeAdministracionBe.actualizarRecusrso(recursoDTO);
 	}
 
 	@DELETE
+	@Path("/eliminar/")
 	public boolean eliminarRecurso(RecursoDTO recursoDTO) throws ExceptionDAO {
 		return facadeAdministracionBe.eliminarRecurso(recursoDTO);
 	}

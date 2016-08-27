@@ -43,7 +43,9 @@ public class ConnectionSecurity {
 			SecurityUtils.setSecurityManager(securityManager);
 			Subject currentUser = SecurityUtils.getSubject();
 			UsernamePasswordToken token = new UsernamePasswordToken(user, password);
+			System.out.println("paso 1 "+token.getUsername());
 			currentUser.login(token);
+			System.out.println("paso 2 "+token.getUsername());
 			// Si el usuario esta autenticado se devuelve el sujeto
 			if (currentUser.isAuthenticated())
 				return currentUser;

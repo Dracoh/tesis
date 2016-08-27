@@ -51,7 +51,8 @@ public class AdminAdministracionWR {
 		Client client = ClientBuilder.newClient();
 
 		WebTarget messages = client.target(urlProca3si + "recurso/usuario/{id}/recurso");
-		return messages.resolveTemplate("id", idUser).request(MediaType.APPLICATION_JSON_TYPE).get(new GenericType<List<RecursoDTO>>() {
+		return messages.resolveTemplate("id", idUser)
+				.request(MediaType.APPLICATION_JSON_TYPE).get(new GenericType<List<RecursoDTO>>() {
 		});
 	}
 

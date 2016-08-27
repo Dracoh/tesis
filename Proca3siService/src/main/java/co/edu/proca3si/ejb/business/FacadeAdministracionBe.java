@@ -83,7 +83,7 @@ public class FacadeAdministracionBe extends FacadeBean {
 		try {
 			EncryptionSecurity encryptionSecurity = new EncryptionSecurity();
 			/*
-			 * Se realiza la convercion de los datos de seguridad del usuario
+			 * Se realiza la conversion de los datos de seguridad del usuario
 			 */
 			UserMembership userMembership = generalEntityConversion.AssembleEntityUserMembership(usuarioDTO.getUserMembershipDTO());
 			// Se encripta la contrasenia

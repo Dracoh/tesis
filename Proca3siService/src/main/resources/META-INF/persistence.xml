@@ -22,10 +22,15 @@
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 		
 		<properties>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop" />
+			<!-- hibernate -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />   <!-- create-drop, create, update, validate -->
 			<property name="hibernate.show_sql" value="false" />
 			<property name="hibernate.default_schema" value="public" />
 			<property name="hibernate.current_session_context_class" value="thread" />
+			
+			<!-- Envers -->
+			<property name="org.hibernate.envers.audit_strategy" value="org.hibernate.envers.strategy.ValidityAuditStrategy" />
+            <property name="org.hibernate.envers.audit_strategy_validity_store_revend_timestamp" value="true" />
 		</properties>
 	</persistence-unit>
 

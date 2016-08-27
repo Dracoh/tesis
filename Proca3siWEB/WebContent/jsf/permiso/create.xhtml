@@ -1,0 +1,59 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:dialog id="dlgCrearPermiso" widgetVar="dlgCrearPermiso" modal="true"
+		appendTo="@(body)" header="Crear Permiso" closable="false"
+		closeOnEscape="true" resizable="false" styleClass="">
+
+		<h:form id="frmCrearPermiso"> 
+		
+			<p:panelGrid id="panelCreate" columns="2" layout="grid" 
+			             styleClass="panel no-border-panel">		       
+			       <f:facet name="header"> 
+			           <p:focus context="panelCreate"/>
+			       </f:facet>
+			            
+			       <p:outputLabel value="*Nombre" styleClass="Fs16"/>
+			       <p:inputText id="txtNombre" value="#{permisoMB.permiso.gpoNombre}"
+							         autocomplete="off" label="Nombre" 
+							         required="true" size="20" />     
+			             
+			       <p:outputLabel value="*Descripción" styleClass="Fs16"/>
+			       <p:inputText id="txtDescripcion" value="#{permisoMB.permiso.gpoDescripcion}"
+							         autocomplete="off" label="Descripción" 
+							         required="true" size="30" />
+							         
+				   <p:outputLabel value="Estado" styleClass="Fs16"/>
+				   <p:selectBooleanCheckbox id="chkEstado" value="#{permisoMB.permiso.gpoEstado}"/>
+		                
+		           <f:facet name="footer">
+		                <p:separator styleClass="separator"></p:separator>
+		                <h:panelGroup style="display:block; text-align:center">
+							<p:commandButton id="btnGuardar" icon="ui-icon-check" 
+							                 value="Guardar" 
+							                 update="frmdtPermiso:dtPermiso, 
+							                         frmCrearPermiso:panelCreate, 
+							                         growl"            
+							                 actionListener="#{permisoMB.crearModifcarPermiso('C')}"
+							                 oncomplete="if (args.validationFailed) { PF('dlgCrearPermiso').show();
+                                                         } else { PF('dlgCrearPermiso').hide();}" 
+							                 styleClass=""/>
+							<p:commandButton id="btnCancel" icon="ui-icon-closethick" 
+							                 title="Cancelar" value="Cancelar" 
+							                 update=":frmCrearPermiso:panelCreate" process="@this"
+							                 oncomplete="PF('dlgCrearPermiso').hide()"
+							                 style="margin-left:2%; margin-top:4px"
+							                 styleClass="btnCancel">
+							        <p:resetInput target=":frmCrearPermiso:panelCreate" />
+							</p:commandButton>				
+						</h:panelGroup>
+		           </f:facet>
+			</p:panelGrid>
+		</h:form>
+		
+	</p:dialog>
+
+</ui:composition>

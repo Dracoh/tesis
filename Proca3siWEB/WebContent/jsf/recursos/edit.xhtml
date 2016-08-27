@@ -1,0 +1,64 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:dialog id="dlgEditarRecurso" widgetVar="dlgEditarRecurso" modal="true"
+		appendTo="@(body)" header="Editar Recurso" closable="false"
+		closeOnEscape="true" resizable="false" styleClass="">
+
+		<h:form id="frmEditarRecurso"> 
+		
+			<p:panelGrid id="panelEdit" columns="2" layout="grid" 
+			             styleClass="panel no-border-panel">		       
+			       <f:facet name="header"> 
+			           <p:focus context="panelEdit"/>
+			       </f:facet>
+			            
+			       <p:outputLabel value="*Nombre" styleClass="Fs16"/>
+			       <p:inputText id="txtNombre" value="#{recursoMB.recurso.recNombre}"
+							         autocomplete="off" label="Nombre" 
+							         required="true" size="20" />     
+			             
+			       <p:outputLabel value="*Descripción" styleClass="Fs16"/>
+			       <p:inputText id="txtDescripcion" value="#{recursoMB.recurso.recDescripccion}"
+							         autocomplete="off" label="Descripción" 
+							         required="true" size="30" />
+				   
+				   <p:outputLabel value="*Path" styleClass="Fs16"/>
+			       <p:inputText id="txtPath" value="#{recursoMB.recurso.recPath}"
+							         autocomplete="off" label="Path" 
+							         required="true" size="60" />		         
+				   
+				   <p:outputLabel value="Estado" styleClass="Fs16"/>
+				   <p:selectBooleanCheckbox id="chkEstado" value="#{recursoMB.recurso.recEstado}"/>
+		           
+		           <f:facet name="footer">
+		                <p:separator styleClass="separator"></p:separator>
+		                <h:panelGroup style="display:block; text-align:center">
+							<p:commandButton id="btnGuardar" icon="ui-icon-check" 
+							                 value="Guardar" 
+							                 update="frmdtRecurso:dtRecurso, 
+							                         frmEditarRecurso:panelEdit, 
+							                         growl" 
+							                 actionListener="#{recursoMB.crearModifcarRecurso('E')}"
+							                 oncomplete="if (args.validationFailed) { PF('dlgEditarRecurso').show();
+                                                         } else { PF('dlgEditarRecurso').hide();}" 
+							                 styleClass=""/>
+							<p:commandButton id="btnCancel" icon="ui-icon-closethick" 
+							                 title="Cancelar" value="Cancelar" 
+							                 update=":frmEditarRecurso:panelEdit" process="@this"
+							                 oncomplete="PF('dlgEditarRecurso').hide()"
+							                 style="margin-left:2%; margin-top:4px"
+							                 styleClass="btnCancel">
+							        <p:resetInput target=":frmEditarRecurso:panelEdit" />
+							</p:commandButton>				
+						</h:panelGroup>
+		           </f:facet>
+			</p:panelGrid>
+		</h:form>
+		
+	</p:dialog>
+
+</ui:composition>
