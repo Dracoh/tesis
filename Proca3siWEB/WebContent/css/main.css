@@ -1,0 +1,55 @@
+
+/* menu lateral */
+.lateralMenu.ui-menu, .lateralMenu.ui-menu .lateralMenu.ui-menu-child{
+	background-color: white !important;
+	border: none !important;  
+}
+
+.lateralMenu .ui-widget-header {
+    background: #5B7EAC !important;
+    border: 0px solid #ffffff !important;
+    width: 100% !important;
+    color: white !important; 
+    font-weight: normal !important;
+}
+
+.ui-menu .ui-menu-list .ui-menuitem { 
+    background-color: white !important;
+}
+
+.ui-menu .ui-menu-list .ui-menuitem a { 
+	color: black !important;
+}
+
+.lateralMenu.ui-menu .lateralMenu.ui-menu-list .lateralMenu.ui-menuitem:hover {
+	background-color: #2C86CB !important;
+}
+
+.ui-menu .ui-menu-list .ui-menuitem a:hover {
+	color: white !important; 
+}
+
+.ui-menu .ui-widget-header h1, .ui-menu .ui-widget-header h2, .ui-menu .ui-widget-header h3, 
+.ui-menu .ui-widget-header h4, .ui-menu .ui-widget-header h5, .ui-menu .ui-widget-header h6 {
+    font-size: 1.1em !important;
+    font-weight: normal !important;
+}
+
+
+/* data tables */
+.ui-datatable .ui-datatable-header, .ui-datatable .ui-datatable-footer{
+	font-size: 13px !important;  
+}
+
+/* general panel */
+.no-border-panel.ui-panelgrid>*>tr, .no-border-panel.ui-panelgrid .ui-panelgrid-cell{
+	border-style: none !important; 
+}
+
+.no-border-panel.ui-panelgrid {
+  border:0 solid #D1D3D4;
+}       
+
+.panel .ui-widget-content {
+    border: 0px !important;
+}

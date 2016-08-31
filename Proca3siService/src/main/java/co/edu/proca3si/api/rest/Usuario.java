@@ -37,18 +37,20 @@ public class Usuario {
 	private FacadeAdministracionBe facadeAdministracionBe;
 
 	@POST
+	@Path("/crear")
 	public void crearUsuario(UsuarioDTO usuarioDTO) throws ExceptionDAO, ExcepcionAplicacion {
 		facadeAdministracionBe.crearUsuario(usuarioDTO);
 	}
 
 	@GET
-	@Path("/{id: \\d+}")
+	@Path("/consultar/{id}")
 	public UsuarioDTO consultarUsuarioxId(@PathParam("id") long id) throws ExceptionDAO {
 		UsuarioDTO usuarioDTO = facadeAdministracionBe.consultarUsuarioSimpleXid(id);
 		return usuarioDTO;
 	}
 
 	@GET
+	@Path("/consultarTodos/")
 	public List<UsuarioDTO> consultarUsuariosTodos() throws ExceptionDAO {
 		List<UsuarioDTO> lsUsuarioDTOs = facadeAdministracionBe.consultarUsuariosTodos();
 		return lsUsuarioDTOs;
@@ -62,6 +64,7 @@ public class Usuario {
 	}
 
 	@PUT
+	@Path("/actualizar/")
 	public void actualizarUsuario(UsuarioDTO usuarioDTO) throws ExceptionDAO, ExcepcionAplicacion {
 		facadeAdministracionBe.actualizarUsuario(usuarioDTO);
 	}
@@ -74,7 +77,7 @@ public class Usuario {
 	}
 
 	@DELETE
-	@Path("/{id: \\d+}")
+	@Path("/eliminar/")
 	public void eliminarUsuario(@PathParam("id") Long id) throws ExceptionDAO {
 		facadeAdministracionBe.eliminarUsuario(id);
 	}

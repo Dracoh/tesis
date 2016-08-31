@@ -4,11 +4,11 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-	<p:dialog id="dlgCrearGrupo" widgetVar="dlgCrearGrupo" modal="true"
-		appendTo="@(body)" header="Crear Grupo" closable="false"
+	<p:dialog id="dlgCrearUsuario" widgetVar="dlgCrearUsuario" modal="true"
+		appendTo="@(body)" header="Crear Usuario" closable="false"
 		closeOnEscape="true" resizable="false" styleClass="">
 
-		<h:form id="frmCrearGrupo"> 
+		<h:form id="frmCrearUsuario"> 
 		
 			<p:panelGrid id="panelCreate" columns="2" layout="grid" 
 			             styleClass="panel no-border-panel">		       
@@ -17,37 +17,37 @@
 			       </f:facet>
 			            
 			       <p:outputLabel value="*Nombre" styleClass="Fs16"/>
-			       <p:inputText id="txtNombre" value="#{grupoMB.grupo.gpoNombre}"
+			       <p:inputText id="txtNombre" value="#{usuarioMB.usuario.usuNombre}"
 							         autocomplete="off" label="Nombre" 
 							         required="true" size="20" />     
 			             
-			       <p:outputLabel value="*Descripción" styleClass="Fs16"/>
-			       <p:inputText id="txtDescripcion" value="#{grupoMB.grupo.gpoDescripcion}"
-							         autocomplete="off" label="Descripción" 
+			       <p:outputLabel value="*Apellido" styleClass="Fs16"/>
+			       <p:inputText id="txtApellido" value="#{usuarioMB.usuario.usuApellido}"
+							         autocomplete="off" label="Apellido" 
 							         required="true" size="30" />
 							         
 				   <p:outputLabel value="Estado" styleClass="Fs16"/>
-				   <p:selectBooleanCheckbox id="chkEstado" value="#{grupoMB.grupo.gpoEstado}"/>
+				   <p:selectBooleanCheckbox id="chkEstado" value="#{usuarioMB.usuario.usuEstado}"/>
 		                
 		           <f:facet name="footer">
 		                <p:separator styleClass="separator"></p:separator>
 		                <h:panelGroup style="display:block; text-align:center">
 							<p:commandButton id="btnGuardar" icon="ui-icon-check" 
 							                 value="Guardar" 
-							                 update="frmdtGrupo:dtGrupo, 
-							                         frmCrearGrupo:panelCreate, 
+							                 update="frmdtUsuario:dtUsuario, 
+							                         frmCrearUsuario:panelCreate, 
 							                         growl"            
-							                 actionListener="#{grupoMB.crearModifcarGrupo('C')}"
-							                 oncomplete="if (args.validationFailed) { PF('dlgCrearGrupo').show();
-                                                         } else { PF('dlgCrearGrupo').hide();}" 
+							                 actionListener="#{usuarioMB.crearModifcarUsuario('C')}"
+							                 oncomplete="if (args.validationFailed) { PF('dlgCrearUsuario').show();
+                                                         } else { PF('dlgCrearUsuario').hide();}" 
 							                 styleClass=""/>
 							<p:commandButton id="btnCancel" icon="ui-icon-closethick" 
 							                 title="Cancelar" value="Cancelar" 
-							                 update=":frmCrearGrupo:panelCreate" process="@this"
-							                 oncomplete="PF('dlgCrearGrupo').hide()"
+							                 update=":frmCrearUsuario:panelCreate" process="@this"
+							                 oncomplete="PF('dlgCrearUsuario').hide()"
 							                 style="margin-left:2%; margin-top:4px"
 							                 styleClass="btnCancel">
-							        <p:resetInput target=":frmCrearGrupo:panelCreate" />
+							        <p:resetInput target=":frmCrearUsuario:panelCreate" />
 							</p:commandButton>				
 						</h:panelGroup>
 		           </f:facet>

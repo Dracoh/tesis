@@ -8,16 +8,5 @@
 
 <h:form>
 
-	<p:growl id="messages" />
-
-	<p:toolbar styleClass="varHeader">
-		<p:toolbarGroup align="right">
-			<p:menuButton value="#{entradaMB.usuarioDTO.usuarioNombre}">
-				<p:separator />
-				<p:menuitem value="Logout" update="messages"
-					actionListener="#{entradaMB.cerrarSesion}" icon="ui-icon-close" />
-			</p:menuButton>
-		</p:toolbarGroup>
-	</p:toolbar>
 </h:form>
 </html>

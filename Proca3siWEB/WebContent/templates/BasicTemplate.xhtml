@@ -9,6 +9,7 @@
 </h:head>
 
 <h:outputStylesheet name="styles.css" library="css" />
+<h:outputStylesheet name="main.css" library="css" />
 
 <h:body styleClass="fondoMenu">
 	<p:layout fullPage="true">
@@ -20,11 +21,11 @@
 		<p:layoutUnit position="west" size="210">
 			<ui:include src="../comun/menuSuperior.xhtml" />
 		</p:layoutUnit>
-		<!--MENU LATERRAL-->
+		<!--MENU LATERRAL
 		<p:layoutUnit position="east" size="210" header="Taxi"
 			collapsible="true">
 			<ui:include src="../comun/menuLateral.xhtml" />
-		</p:layoutUnit>
+		</p:layoutUnit> -->
 		<!-- CONTENIDO -->
 		<p:layoutUnit position="center">
 			<ui:insert name="content" />

@@ -9,46 +9,52 @@
 
     <p:growl id="growl" showDetail="true" life="5000"/>
 
-	<h:form id="frmdtGrupo">
-		<p:dataTable id="dtGrupo" value="#{grupoMB.grupos}" var="grupo"
-			rows="15" emptyMessage="No se encontraron grupos"
-			selection="#{grupoMB.grupo}" selectionMode="single" 
-			filteredValue="#{grupoMB.filtroGrupos}"
-			rowKey="#{grupo.gpoCodigo}"         
+	<h:form id="frmdtUsuario">
+		<p:dataTable id="dtUsuario" value="#{usuarioMB.usuarios}" var="usuario"
+			rows="15" emptyMessage="No se encontraron usuarios"
+			selection="#{usuarioMB.usuario}" selectionMode="single" 
+			filteredValue="#{usuarioMB.filtroUsuarios}"
+			rowKey="#{usuario.usuCodigo}"         
 			rowsPerPageTemplate="10,20,30" paginator="true"
 			paginatorPosition="top"
 			paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
 
 			<f:facet name="header">
-				<h:outputText value="Lista de Grupos" />
+				<h:outputText value="Lista de Usuarios" />
 			</f:facet>
 
-            <p:ajax event="rowSelect" listener="#{grupoMB.onRowSelect}" />   
+            <p:ajax event="rowSelect" listener="#{usuarioMB.onRowSelect}" />   
 
-			<p:column headerText="Nombre del Grupo"      
-			          filterBy="#{grupo.gpoNombre}" 
+			<p:column headerText="Nombre del Usuario"      
+			          filterBy="#{usuario.usuNombre}" 
 			          filterMatchMode="contains"
-			          sortBy="#{grupo.gpoNombre}" >
-				<h:outputText value="#{grupo.gpoNombre}" />
+			          sortBy="#{usuario.usuNombre}" >
+				<h:outputText value="#{usuario.usuNombre}" />
 			</p:column>
 
-			<p:column headerText="Descripción"
-			          sortBy="#{grupo.gpoDescripcion}" 
-			          filterBy="#{grupo.gpoDescripcion}">
-				<h:outputText value="#{grupo.gpoDescripcion}" />
+			<p:column headerText="Apellido"
+			          sortBy="#{usuario.usuApellido}" 
+			          filterBy="#{usuario.usuApellido}">
+				<h:outputText value="#{usuario.usuApellido}" />
 			</p:column>
 
+			<p:column headerText="Dirección"
+			          sortBy="#{usuario.usuDireccion}" 
+			          filterBy="#{usuario.usuDireccion}">
+				<h:outputText value="#{usuario.usuDireccion}" />
+			</p:column>
+			
 			<p:column headerText="Estado"
-			          sortBy="#{grupo.gpoEstado}" >
-				<h:outputText value="#{grupo.gpoEstado}" />
+			          sortBy="#{usuario.usuEstado}" >
+				<h:outputText value="#{usuario.usuEstado}" />
 			</p:column>
 			
 			<f:facet name="footer">
 			    <h:panelGroup style="display:block; text-align:left">
 			    	<p:commandButton id="btnAgregar" value="Agregar"
 			    	                 icon="ui-icon-plusthick"
-			    	                 actionListener="#{grupoMB.antesAgregar()}"
-			    	                 oncomplete="PF('dlgCrearGrupo').show()"/>
+			    	                 actionListener="#{usuarioMB.antesAgregar()}"
+			    	                 oncomplete="PF('dlgCrearUsuario').show()"/>
 			    </h:panelGroup>
 			</f:facet>
 

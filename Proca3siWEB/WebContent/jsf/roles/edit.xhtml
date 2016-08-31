@@ -4,11 +4,11 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 
-	<p:dialog id="dlgEditarGrupo" widgetVar="dlgEditarGrupo" modal="true"
-		appendTo="@(body)" header="Editar Grupo" closable="false"
+	<p:dialog id="dlgEditarRol" widgetVar="dlgEditarRol" modal="true"
+		appendTo="@(body)" header="Editar Rol" closable="false"
 		closeOnEscape="true" resizable="false" styleClass="">
 
-		<h:form id="frmEditarGrupo"> 
+		<h:form id="frmEditarRol"> 
 		
 			<p:panelGrid id="panelEdit" columns="2" layout="grid" 
 			             styleClass="panel no-border-panel">		       
@@ -17,37 +17,32 @@
 			       </f:facet>
 			            
 			       <p:outputLabel value="*Nombre" styleClass="Fs16"/>
-			       <p:inputText id="txtNombre" value="#{grupoMB.grupo.gpoNombre}"
+			       <p:inputText id="txtNombre" value="#{rolMB.rol.rolNombre}"
 							         autocomplete="off" label="Nombre" 
 							         required="true" size="20" />     
-			             
-			       <p:outputLabel value="*Descripción" styleClass="Fs16"/>
-			       <p:inputText id="txtDescripcion" value="#{grupoMB.grupo.gpoDescripcion}"
-							         autocomplete="off" label="Descripción" 
-							         required="true" size="30" />
-							         
+
 				   <p:outputLabel value="Estado" styleClass="Fs16"/>
-				   <p:selectBooleanCheckbox id="chkEstado" value="#{grupoMB.grupo.gpoEstado}"/>
+				   <p:selectBooleanCheckbox id="chkEstado" value="#{rolMB.rol.rolAestado}"/>
 		           
 		           <f:facet name="footer">
 		                <p:separator styleClass="separator"></p:separator>
 		                <h:panelGroup style="display:block; text-align:center">
 							<p:commandButton id="btnGuardar" icon="ui-icon-check" 
 							                 value="Guardar" 
-							                 update="frmdtGrupo:dtGrupo, 
-							                         frmEditarGrupo:panelEdit, 
+							                 update="frmdtRol:dtRol, 
+							                         frmEditarRol:panelEdit, 
 							                         growl" 
-							                 actionListener="#{grupoMB.crearModifcarGrupo('E')}"
-							                 oncomplete="if (args.validationFailed) { PF('dlgEditarGrupo').show();
-                                                         } else { PF('dlgEditarGrupo').hide();}" 
+							                 actionListener="#{rolMB.crearModifcarRol('E')}"
+							                 oncomplete="if (args.validationFailed) { PF('dlgEditarRol').show();
+                                                         } else { PF('dlgEditarRol').hide();}" 
 							                 styleClass=""/>
 							<p:commandButton id="btnCancel" icon="ui-icon-closethick" 
 							                 title="Cancelar" value="Cancelar" 
-							                 update=":frmEditarGrupo:panelEdit" process="@this"
-							                 oncomplete="PF('dlgEditarGrupo').hide()"
+							                 update=":frmEditarRol:panelEdit" process="@this"
+							                 oncomplete="PF('dlgEditarRol').hide()"
 							                 style="margin-left:2%; margin-top:4px"
 							                 styleClass="btnCancel">
-							        <p:resetInput target=":frmEditarGrupo:panelEdit" />
+							        <p:resetInput target=":frmEditarRol:panelEdit" />
 							</p:commandButton>				
 						</h:panelGroup>
 		           </f:facet>

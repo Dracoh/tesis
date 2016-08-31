@@ -6,25 +6,22 @@
 	xmlns:p="http://primefaces.org/ui">
 
 <h:head></h:head>
+
 <body>
 	<h:form>
-		<p:slideMenu style="width:180px">
-			<p:submenu label="Administracion de perfiles" icon="ui-icon-refresh"
-				styleClass="subMenu" rendered="#{entradaMB.puedeConsultar}">
-				<p:menuitem value="Asignar Perfiles" icon="ui-icon-disk"
-					actionListener="#{entradaMB.redirigirConsultarUsuarioPerfil}"
-					rendered="#{entradaMB.puedeEditar}" />
+		<p:menu styleClass="lateralMenu"> 
+			<p:submenu label="Mantenimientos">
+			    <p:menuitem value="Acciones" />
+				<p:menuitem value="Grupos" outcome="#{pageContext.request.contextPath}/jsf/grupo/list.xhtml"/>
+				<p:menuitem value="Permisos" outcome="#{pageContext.request.contextPath}/jsf/permiso/list.xhtml" />
+				<p:menuitem value="Recursos" outcome="#{pageContext.request.contextPath}/jsf/recursos/list.xhtml"/>
+				<p:menuitem value="Roles" outcome="#{pageContext.request.contextPath}/jsf/roles/list.xhtml"/>
+				<p:menuitem value="Usuarios" outcome="#{pageContext.request.contextPath}/jsf/users/list.xhtml"/>
 			</p:submenu>
-			<p:submenu label="Administrar Usuarios" icon="ui-icon-newwin"
-				styleClass="subMenu">
-				<p:menuitem value="Registrar Usuario" icon="ui-icon-close"
-					actionListener="#{entradaMB.redirigirRegistarUsuario}"
-					rendered="#{entradaMB.puedeRegistrar}" />
-				<p:menuitem value="Editar Usuario" icon="ui-icon-close"
-					actionListener="#{entradaMB.redirigirConsultarUsuarios}"
-					rendered="#{entradaMB.puedeConsultar and entradaMB.puedeEditar}" />
+			<p:submenu label="Sistema" >
+				<p:menuitem value="Salir" actionListener="#{entradaMB.cerrarSesion}"/>
 			</p:submenu>
-		</p:slideMenu>
+		</p:menu>
 	</h:form>
 </body>
 </html>

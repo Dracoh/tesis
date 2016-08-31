@@ -8,23 +8,28 @@
 <h:head></h:head>
 <body>
 	<h:form>
-		<p:slideMenu style="width:180px">
-			<p:submenu label="Administracion de Taxis" icon="ui-icon-refresh"
-				styleClass="subMenu">
-				<p:menuitem value="Registrar Taxi" icon="ui-icon-close"
-					actionListener="#{entradaMB.redirigirRegistarTaxi}"
-					rendered="#{entradaMB.puedeRegistrar}" />
-				<p:menuitem value="Consultar Taxis" icon="ui-icon-close"
-					actionListener="#{entradaMB.redirigirConsultarTaxis}"
-					rendered="#{entradaMB.puedeConsultar}" />
+		<h3>Overlay</h3>
+		<p:commandButton id="dynaButton" value="Show" type="button"
+			icon="ui-icon-extlink" />
+		<p:menu overlay="true" trigger="dynaButton" my="left top"
+			at="left bottom">
+			<p:submenu label="Ajax">
+				<p:menuitem value="Save" actionListener="#{menuView.save}"
+					update="messages" icon="ui-icon-disk" />
+				<p:menuitem value="Update" actionListener="#{menuView.update}"
+					update="messages" icon="ui-icon-arrowrefresh-1-w" />
 			</p:submenu>
-			<p:submenu label="Administrar Taxistas" icon="ui-icon-newwin"
-				styleClass="subMenu">
-				<p:menuitem value="Registrar Taxista" icon="ui-icon-close"
-					actionListener="#{entradaMB.redirigirRegistarTaxista}"
-					rendered="#{entradaMB.puedeRegistrar}" />
+			<p:submenu label="Non-Ajax">
+				<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+					update="messages" ajax="false" icon="ui-icon-close" />
 			</p:submenu>
-		</p:slideMenu>
+			<p:submenu label="Navigations">
+				<p:menuitem value="External" url="http://www.primefaces.org"
+					icon="ui-icon-home" />
+				<p:menuitem value="Internal" outcome="/mobile/index"
+					icon="ui-icon-star" />
+			</p:submenu>
+		</p:menu>
 	</h:form>
 </body>
 </html>
